@@ -6,7 +6,7 @@ Projects:
 .. toctree::
    :maxdepth: 1
 
-   abx3/abx3
+   halide/halide
    gllbsc/gllbsc
    dssc/dssc
    
