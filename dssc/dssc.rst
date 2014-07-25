@@ -29,9 +29,9 @@ A       Anchor group
 R1      First side group
 R2      Second side group
 R3      Third side group
-HOMO    Kohn-Sharm HOMO eigenvalue
-LUMO    Kohn-Sharm LUMO eigenvalue
-ks_gap  Kohn-Sharm eigenvalue electronic gap (LUMO - HOMO)
+HOMO    Kohn-Sham HOMO eigenvalue
+LUMO    Kohn-Sham LUMO eigenvalue
+ks_gap  Kohn-Sham eigenvalue electronic gap (LUMO - HOMO)
 IP      Ionization potential
 EA      Electron affinity
 de_gap  Electronic gap (IP - EA)
