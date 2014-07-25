@@ -18,8 +18,8 @@ Data for zinc porphyrins based dyes
     A=EthynPhA,R1=H,R2=H,R3=H
     
     
-* `Download raw data <http://cmr.fysik.dtu.dk/dssc.db>`_
-* `Browse data <http://casimir.fysik.dtu.dk:5000/?query=project%3Ddssc>`_
+* :download:`Download raw data <dssc.db>`
+* `Browse data <http://cmr2.fysik.dtu.dk/?query=project%3Ddssc>`_
 
 
 ======  ====================================================

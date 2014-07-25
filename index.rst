@@ -30,7 +30,7 @@ Contents:
     
 Other links:
     
-* `Browse all data <http://casimir.fysik.dtu.dk:5000>`_
+* `Browse all data <http://cmr2.fysik.dtu.dk>`_
 * `ASE-DB <https://wiki.fysik.dtu.dk/ase/ase/db/db.html>`_
 * :ref:`genindex`
 * :ref:`search`
