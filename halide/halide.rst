@@ -1,7 +1,7 @@
 Organometal Halide Perovskites
 ==============================
 
-.. container:: note
+.. container:: article
     
     Ivano E. Castelli, Juan María García-Lastra, Kristian S. Thygesen,
     and Karsten W. Jacobsen
@@ -14,4 +14,5 @@ Organometal Halide Perovskites
 
 
 .. * :download:`Download raw data <halide.db>`
+
 * `Browse data <http://cmr2.fysik.dtu.dk/?query=project%3Dhalide>`_

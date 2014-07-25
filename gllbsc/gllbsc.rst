@@ -1,7 +1,7 @@
 New Light Harvesting Materials
 ==============================
 
-.. container:: note
+.. container:: article
 
     Ivano E. Castelli, Falco Hüser, Mohnish Pandey, Hong Li,
     Kristian S. Thygesen, Brian Seger, Anubhav Jain, Kristin Persson,
@@ -16,4 +16,5 @@ New Light Harvesting Materials
 
 
 .. * :download:`Download raw data <gllbsc.db>`
+
 * `Browse data <http://cmr2.fysik.dtu.dk/?query=project%3Dgllbsc>`_
