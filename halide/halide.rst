@@ -13,17 +13,5 @@ Organometal Halide Perovskites
     __ http://dx.doi.org
 
 
-* :download:`Download raw data <abx3.db>`
-* `Browse data <http://cmr2.fysik.dtu.dk/?query=project%3Dabx3>`_
-
-
-Figure 1
---------
-
-...
-
-
-Table I
--------
-
-...
+.. * :download:`Download raw data <halide.db>`
+* `Browse data <http://cmr2.fysik.dtu.dk/?query=project%3Dhalide>`_
