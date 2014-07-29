@@ -13,14 +13,18 @@ Data for zinc porphyrins based dyes
     __ http://dx.doi.org/10.1039/C3CP54050B 
 
 
-.. figure:: mol.png
-    
-    A=EthynPhA,R1=H,R2=H,R3=H
-    
-    
+.. contents::
+        
 * :download:`Download raw data <dssc.db>`
 * `Browse data <http://cmr2.fysik.dtu.dk/?query=project%3Ddssc>`_
 
+
+Key-value pairs
+---------------
+
+.. figure:: mol.png
+    
+    A=EthynPhA,R1=H,R2=H,R3=H
 
 ======  ====================================================
 key     description
