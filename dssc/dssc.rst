@@ -5,15 +5,18 @@ Data for porphyrin based dyes
   
     Kristian B. Ørnsø, Juan M. García-Lastra and Kristian S. Thygesen
 
-    `Computational screening of functionalized zinc porphyrins for dye sensitized solar cells <http://dx.doi.org/10.1039/C3CP54050B>`_
+    `Computational screening of functionalized zinc porphyrins for dye
+    sensitized solar cells <http://dx.doi.org/10.1039/C3CP54050B>`_
 
     Phys. Chem. Chem. Phys., 2013, 15, 19478-19486
 
 .. container:: article
 
-    Kristian B. Ørnsø, Christian S. Pedersen, Juan M. García-Lastra and Kristian S. Thygesen
+    Kristian B. Ørnsø, Christian S. Pedersen, Juan M. García-Lastra and
+    Kristian S. Thygesen
 
-    `Optimizing porphyrins for dye sensitized solar cells using large-scale ab initio calculations <http://dx.doi.org/10.1039/C4CP01289E>`_
+    `Optimizing porphyrins for dye sensitized solar cells using large-scale
+    ab initio calculations <http://dx.doi.org/10.1039/C4CP01289E>`_
 
     Phys. Chem. Chem. Phys., 2014, 16, 16246-16254
     
@@ -31,9 +34,9 @@ Key-value pairs
     
    Example of dye with: M=Zn, A=EthynPhA, R1=H, R2=H, R3=H
 
-============ =============================================================================
+============ ============================================================
 key          description
-============ =============================================================================
+============ ============================================================
 M            Metal center
 A            Anchor group
 R1           First side group
@@ -48,9 +51,11 @@ E_gap        Electronic gap calculated as E_LUMO - E_HOMO
 E_c          Energy difference between conduction band and E_HOMO
 E_1          Triplet optical gap
 E__opt_LUMO  Optical LUMO location calculated as E_HOMO + E_1 
-LQual1       Level alignment quality calculated with model 1 for the open-circuit voltage
-LQual2       Level alignment quality calculated with model 2 for the open-circuit voltage
-============ =============================================================================
+LQual1       Level alignment quality calculated with model 1 for the
+             open-circuit voltage
+LQual2       Level alignment quality calculated with model 2 for the
+             open-circuit voltage
+============ ============================================================
 
 
 Example of how to use the database to create Figure S1 in the 2014 paper
