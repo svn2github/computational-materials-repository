@@ -4,7 +4,7 @@ import urllib
 from ase.utils.sphinx import create_png_files
 
 url = 'https://wiki.fysik.dtu.dk/cmr2/_downloads/'
-projects = ['dssc']
+projects = ['dssc', 'organometal']
 
 for name in projects:
     path = os.path.join(name, name + '.db')
