@@ -6,9 +6,10 @@ Projects:
 .. toctree::
    :maxdepth: 1
 
+   organometal/organometal
+   dssc/dssc
    halide/halide
    gllbsc/gllbsc
-   dssc/dssc
    
 `Older CMR-projects <https://cmr.fysik.dtu.dk/cmr/index.php>`_:
 
