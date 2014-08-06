@@ -50,7 +50,7 @@ E_LUMO       LUMO location calculated as electron affinity
 E_gap        Electronic gap calculated as E_LUMO - E_HOMO
 E_c          Energy difference between conduction band and E_HOMO
 E_1          Triplet optical gap
-E__opt_LUMO  Optical LUMO location calculated as E_HOMO + E_1 
+E_opt_LUMO   Optical LUMO location calculated as E_HOMO + E_1 
 LQual1       Level alignment quality calculated with model 1 for the
              open-circuit voltage
 LQual2       Level alignment quality calculated with model 2 for the
