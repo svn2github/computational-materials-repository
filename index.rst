@@ -8,7 +8,6 @@ Projects:
 
    organometal/organometal
    dssc/dssc
-   halide/halide
    gllbsc/gllbsc
    
 `Older CMR-projects <https://cmr.fysik.dtu.dk/cmr/index.php>`_:
