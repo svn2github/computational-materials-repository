@@ -16,7 +16,7 @@ Organometal Halide Perovskites
 .. contents::
         
 * :download:`Download raw data <organometal.db>`
-* `Browse data <http://cmr2.fysik.dtu.dk/?query=project%3Dorganometal>`_
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dorganometal>`_
 
 
 Key-value pairs

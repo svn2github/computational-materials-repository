@@ -17,4 +17,4 @@ New Light Harvesting Materials
 
 .. * :download:`Download raw data <gllbsc.db>`
 
-* `Browse data <http://cmr2.fysik.dtu.dk/?query=project%3Dgllbsc>`_
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dgllbsc>`_

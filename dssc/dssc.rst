@@ -24,7 +24,7 @@ Data for porphyrin based dyes
 .. contents::
         
 * :download:`Download raw data <dssc.db>`
-* `Browse data <http://cmr2.fysik.dtu.dk/?query=project%3Ddssc>`_
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Ddssc>`_
 
 
 Key-value pairs
@@ -46,11 +46,11 @@ KS_HOMO      Kohn-Sham HOMO eigenvalue
 KS_LUMO      Kohn-Sham LUMO eigenvalue
 KS_gap       Kohn-Sham eigenvalue electronic gap (KS_LUMO - KS_HOMO)
 E_HOMO       HOMO location calculated as ionization potential
-E_LUMO       LUMO location calculated as electron affinity 
+E_LUMO       LUMO location calculated as electron affinity
 E_gap        Electronic gap calculated as E_LUMO - E_HOMO
 E_c          Energy difference between conduction band and E_HOMO
 E_1          Triplet optical gap
-E_opt_LUMO   Optical LUMO location calculated as E_HOMO + E_1 
+E_opt_LUMO   Optical LUMO location calculated as E_HOMO + E_1
 LQual1       Level alignment quality calculated with model 1 for the
              open-circuit voltage
 LQual2       Level alignment quality calculated with model 2 for the
