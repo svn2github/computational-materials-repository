@@ -3,8 +3,8 @@ import os
 import urllib
 from ase.utils.sphinx import create_png_files
 
-url = 'https://wiki.fysik.dtu.dk/cmr2/_downloads/'
-projects = ['dssc', 'organometal']
+url = 'https://cmr.fysik.dtu.dk/_downloads/'
+projects = ['dssc', 'gllbsc', 'organometal']
 
 for name in projects:
     path = os.path.join(name, name + '.db')

@@ -15,6 +15,26 @@ New Light Harvesting Materials
     __ http:/dx.doi.org
 
 
-.. * :download:`Download raw data <gllbsc.db>`
-
+* :download:`Download raw data <gllbsc.db>`
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dgllbsc>`_
+
+
+Key-value pairs
+---------------
+
+==============  =============================================================
+key             description
+==============  =============================================================
+gllbsc_dir_gap  Direct bandgap calculated with GLLB-SC. A correction due to
+                spin-orbit coupling and exciton effects has been applied
+gllbsc_ind_gap  Indirect bandgap calculated with GLLB-SC. A correction due
+                to spin-orbit coupling and exciton effects has been applied
+gllbsc_disc     Derivative discontinuity calculated with GLLB-SC
+mpid            "Materials project" id
+project         Name of the project: "matproj"
+==============  =============================================================
+
+Keywords
+--------
+
+XXX ICSD: all 3054 rows.  RPBE: 2647 rows. GLLBSC: 407 rows.
