@@ -7,6 +7,7 @@ project = u'COMPUTATIONAL MATERIALS REPOSITORY'
 copyright = u'2014, CAMd'
 exclude_patterns = ['build']
 pygments_style = 'sphinx'
+default_role = 'math'
 html_theme = 'haiku'
 html_style = 'cmr.css'
 html_title = 'COMPUTATIONAL MATERIALS REPOSITORY'
