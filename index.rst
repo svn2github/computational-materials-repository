@@ -9,6 +9,8 @@ Projects:
    organometal/organometal
    dssc/dssc
    mp_gllbsc/mp_gllbsc
+   cubic_perovskite/cubic_perovskite
+
    
 `Older CMR-projects <https://cmr1.fysik.dtu.dk/cmr/index.php>`_:
 
