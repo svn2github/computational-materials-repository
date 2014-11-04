@@ -14,8 +14,8 @@ New Light Harvesting Materials
 
     __ http:/dx.doi.org/10.1002/aenm.201400915
 
-* :download:`Download raw data <gllbsc.db>`
-* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dgllbsc>`_
+* :download:`Download raw data <mp_gllbsc.db>`
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dmp_gllbsc>`_
 
 
 Key-value pairs

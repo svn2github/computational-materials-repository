@@ -8,7 +8,7 @@ Projects:
 
    organometal/organometal
    dssc/dssc
-   gllbsc/gllbsc
+   mp_gllbsc/mp_gllbsc
    
 `Older CMR-projects <https://cmr1.fysik.dtu.dk/cmr/index.php>`_:
 

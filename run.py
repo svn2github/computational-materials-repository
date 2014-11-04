@@ -4,7 +4,7 @@ import urllib
 from ase.utils.sphinx import create_png_files
 
 url = 'https://cmr.fysik.dtu.dk/_downloads/'
-projects = ['dssc', 'gllbsc', 'organometal']
+projects = ['dssc', 'mp_gllbsc', 'organometal']
 
 for name in projects:
     path = os.path.join(name, name + '.db')
