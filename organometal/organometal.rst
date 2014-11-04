@@ -33,7 +33,7 @@ gllbsc_disc     Derivative discontinuity calculated with GLLB-SC
 name            Name given to the crystal structure
 symmetry        Symmetry of the crystal
 space_group     Space group of the crystal
-project         Name of the project
+project         Name of the project: "organometal"
 ==============  =============================================================
 
 

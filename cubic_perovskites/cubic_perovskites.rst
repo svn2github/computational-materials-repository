@@ -25,7 +25,7 @@ Perovskite water-splitting
 
     __ http:/dx.doi.org/
 
-* :download:`Download raw data <cubic_perovskite.db>`
+* :download:`Download raw data <cubic_perovskites.db>`
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dcubic_perovskites>`_
 
 

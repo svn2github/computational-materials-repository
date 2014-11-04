@@ -55,6 +55,7 @@ LQual1       Level alignment quality calculated with model 1 for the
              open-circuit voltage
 LQual2       Level alignment quality calculated with model 2 for the
              open-circuit voltage
+project      Name of the project: "dssc"
 ============ ============================================================
 
 

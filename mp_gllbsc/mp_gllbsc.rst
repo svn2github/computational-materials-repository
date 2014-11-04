@@ -33,5 +33,5 @@ gw0_gap         `GW_0` gap at `\Gamma`
 gw_gap          `GW` gap at `\Gamma`
 hse06_gap       HSE06 gap at `\Gamma`
 lda_gap         LDA gap at `\Gamma`
-project         Name of the project: "matproj"
+project         Name of the project: "mp_gllbsc"
 ==============  =============================================================
