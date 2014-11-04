@@ -12,8 +12,7 @@ New Light Harvesting Materials
 
     Advanced Energy Materials, Juli 22, 2014
 
-    __ http:/dx.doi.org
-
+    __ http:/dx.doi.org/10.1002/aenm.201400915
 
 * :download:`Download raw data <gllbsc.db>`
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dgllbsc>`_
@@ -29,11 +28,10 @@ gllbsc_dir_gap  Direct bandgap calculated with GLLB-SC.
 gllbsc_ind_gap  Indirect bandgap calculated with GLLB-SC.
 gllbsc_disc     Derivative discontinuity calculated with GLLB-SC.
 mpid            "Materials project" id
+g0w0_gap        `G_0W_0` gap at `\Gamma`
+gw0_gap         `GW_0` gap at `\Gamma`
+gw_gap          `GW` gap at `\Gamma`
+hse06_gap       HSE06 gap at `\Gamma`
+lda_gap         LDA gap at `\Gamma`
 project         Name of the project: "matproj"
 ==============  =============================================================
-
-
-Keywords
---------
-
-XXX ICSD: all 3054 rows.  RPBE: 2647 rows. GLLBSC: 407 rows.
