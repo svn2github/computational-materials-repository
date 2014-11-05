@@ -10,7 +10,7 @@ Projects:
    dssc/dssc
    mp_gllbsc/mp_gllbsc
    cubic_perovskites/cubic_perovskites
-
+   low_symmetry_perovskites/low_symmetry_perovskites
    
 `Older CMR-projects <https://cmr1.fysik.dtu.dk/cmr/index.php>`_:
 
