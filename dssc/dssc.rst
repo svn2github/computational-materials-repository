@@ -1,4 +1,4 @@
-Data for porphyrin based dyes
+Porphyrin based dyes
 ===================================
 
 .. container:: article
