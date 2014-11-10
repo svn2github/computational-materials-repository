@@ -10,7 +10,7 @@ Low symmetry perovskites
     
     MRS Proc. 1523, mrsf121523qq0706.
     
-    __ http:/dx.doi.org/
+    __ http:/dx.doi.org/10.1557/opl.2013.450
 
 .. container:: article
 
@@ -22,7 +22,7 @@ Low symmetry perovskites
     
     New Journal Of Physics 15, 105026.
 
-    __ http:/dx.doi.org/
+    __ http:/dx.doi.org/10.1088/1367-2630/15/10/105026
 
 * :download:`Download raw data <low_symmetry_perovskites.db>`
 * `Browse data
@@ -46,12 +46,14 @@ project                Name of the project: "low_symmetry_perovskites"
 Keywords
 --------
 
+Ruddlesden–Popper: `A_{n+1}B_nO_{3n+1}`
+
 ============  ========================================================
 keyword       description
 ============  ========================================================
-A2BO3N        ...
-A2BO4
-A3B2O7
-DJ
-DJ_BIG
+A2BO4         Ruddlesden–Popper with `n=1`
+A3B2O7        Ruddlesden–Popper with `n=2`
+A2BO3N        Nitrogen substitutred Ruddlesden–Popper with `n=1`
+DJ_1          Dion-Jacobson phase: A=Na, Mg, K, Rb
+DJ_2          Dion-Jacobson phase: A=Rb, Sr, Cs, Ba
 ============  ========================================================
