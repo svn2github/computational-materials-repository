@@ -14,7 +14,7 @@ Low symmetry perovskites
 
 .. container:: article
 
-    Castelli, I. E., Garcia-Lastra, J. M., Hser, F., Thygesen, K. S.,
+    Castelli, I. E., García-Lastra, J. M., Hüser, F., Thygesen, K. S.,
     and Jacobsen, K. W.
     
     `Stability and bandgaps of layered perovskites for one- and two-photon
