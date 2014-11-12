@@ -33,5 +33,25 @@ gw0_gap         `GW_0` gap at `\Gamma`
 gw_gap          `GW` gap at `\Gamma`
 hse06_gap       HSE06 gap at `\Gamma`
 lda_gap         LDA gap at `\Gamma`
+gllbsc_gap      GLLBSC gap at `\Gamma`
 project         Name of the project: "mp_gllbsc"
 ==============  =============================================================
+
+
+Band gaps
+---------
+
+Here, we calculated the errors in the band gaps at `\Gamma` for a set of 20
+ternary and quaternary materials releative to self-consitent GW:
+
+.. literalinclude:: table.py
+
+.. csv-table::
+    :file: gaps.csv
+    :header-rows: 1
+    
+.. image:: gaps.svg
+
+Here is how to make the plot:
+
+.. literalinclude:: figure.py
