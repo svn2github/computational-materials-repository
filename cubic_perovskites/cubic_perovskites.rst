@@ -35,8 +35,8 @@ Key-value pairs
 =====================  =======================================================
 key                    description
 =====================  =======================================================
-A                      A-ion in the cubic perovskite
-B                      B-ion in the cubic perovskite
+A_ion                  A-ion in the cubic perovskite
+B_ion                  B-ion in the cubic perovskite
 anion                  Anion combination in the perovskite
 gllbsc_dir_gap         Direct bandgap calculated with GLLB-SC
 gllbsc_ind_gap         Indirect bandgap calculated with GLLB-SC
@@ -48,16 +48,7 @@ CB_dir, CB_ind         Direct and Indirect position of the conduction band
                        edge
 VB_dir, VB_ind         Indirect and Indirect position of the conduction band
                        edge
+reference              "standard" (used to calculate the standard
+                       heat of formation) or "pool" (reference included in
+                       the calculation of the convex hull)
 =====================  =======================================================
-
-
-Keywords
---------
-
-============  ========================================================
-keyword       description
-============  ========================================================
-ref_LP        Reference included in the calculation of the convex hull
-standard_ref  Reference standard state (used to calculate the standard
-              heat of formation)
-============  ========================================================
