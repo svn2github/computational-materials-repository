@@ -11,7 +11,7 @@ con = ase.db.connect('mp_gllbsc.db')
 
 # Extract gaps data:
 data = []
-for dct in con.select('g0w0_gap>0'):
+for dct in con.select('g0w0_gap'):
     data.append([dct.formula,
                  dct.gw_gap,
                  dct.gw0_gap,

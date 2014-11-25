@@ -40,20 +40,6 @@ gllbsc_ind_gap         Indirect bandgap calculated with GLLB-SC
 gllbsc_disc            Derivative discontinuity calculated with GLLB-SC
 phase                  "double", "ruddlesden-popper" or "dion-jacobsen"
 project                Name of the project: "low_symmetry_perovskites"
+ruddlesden_popper      "A2BO4", "A3B2O7" or "A2BO3N"
+dion_jacobsen          1: A=Na, Mg, K, Rb or 2: A=Rb, Sr, Cs, Ba
 =====================  =======================================================
-
-
-Keywords
---------
-
-Ruddlesden–Popper: `A_{n+1}B_nO_{3n+1}`
-
-============  ========================================================
-keyword       description
-============  ========================================================
-A2BO4         Ruddlesden–Popper with `n=1`
-A3B2O7        Ruddlesden–Popper with `n=2`
-A2BO3N        Nitrogen substitutred Ruddlesden–Popper with `n=1`
-DJ_1          Dion-Jacobson phase: A=Na, Mg, K, Rb
-DJ_2          Dion-Jacobson phase: A=Rb, Sr, Cs, Ba
-============  ========================================================

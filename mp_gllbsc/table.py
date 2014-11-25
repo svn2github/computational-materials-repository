@@ -6,7 +6,7 @@ import ase.db
 con = ase.db.connect('mp_gllbsc.db')
 
 data = []
-for dct in con.select('g0w0_gap>0'):
+for dct in con.select('g0w0_gap'):
     ref = dct.gw_gap
     data.append([dct.gw0_gap - ref,
                  dct.g0w0_gap - ref,
