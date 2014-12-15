@@ -11,6 +11,7 @@ Projects:
    mp_gllbsc/mp_gllbsc
    cubic_perovskites/cubic_perovskites
    low_symmetry_perovskites/low_symmetry_perovskites
+   beef/beef
    
 `Older CMR-projects <https://cmr1.fysik.dtu.dk/cmr/index.php>`_:
 
