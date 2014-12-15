@@ -63,11 +63,13 @@ This should print:
 
 .. image:: hist.svg
 
-The 64 mBEEF energy contributions are calculated from self-consistent mBEEF
-calculations at mBEEF geometries.
+The `8\times 8` mBEEF energy contributions are calculated from
+self-consistent mBEEF calculations at mBEEF geometries.
 
 
 Running the calculations again
 ------------------------------
 
-...
+This example show how to run all the G3/99 systems with PBE:
+    
+.. literalinclude:: pbe.py

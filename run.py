@@ -28,4 +28,7 @@ for name, dbs in projects:
                 print('Dowloading', path)
                 urllib.urlretrieve(url + db + '.db', path)
         
-create_png_files(run_all_python_files=True, exclude=['./run.py', './conf.py'])
+create_png_files(run_all_python_files=True,
+                 exclude=['./run.py',
+                          './conf.py',
+                          'beef/pbe.py'])
