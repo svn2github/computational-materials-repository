@@ -5,7 +5,16 @@ Bayesian error estimation functionals
     
 .. container:: article
 
-    ...
+    Jess Wellendorff, Keld T. Lundgaard, Karsten W. Jacobsen, and
+    Thomas Bligaard
+    
+    `mBEEF: An accurate semi-local Bayesian error estimation density
+    functional`__
+    
+    The Journal of Chemical Physics 140, 144107 (2014)
+    
+    __ http://dx.doi.org/10.1063/1.4870397
+    
 
 * :download:`Download raw reference data <beef.db>`
 * :download:`Download raw GPAW data <beefgpaw.db>`
@@ -42,7 +51,7 @@ Functionals
 Ensembles
 ---------
 
-The rows with ``xc='mBEEF'`` also contain data for doing ensembles:
+Rows with ``xc='mBEEF'`` also contain data for doing ensembles:
 
 .. literalinclude:: ensemble.py
     :start-after: future
@@ -53,6 +62,9 @@ This should print:
 .. literalinclude:: output.txt
 
 .. image:: hist.svg
+
+The 64 mBEEF energy contributions are calculated from self-consistent mBEEF
+calculations at mBEEF geometries.
 
 
 Running the calculations again
