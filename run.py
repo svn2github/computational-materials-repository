@@ -31,4 +31,4 @@ for name, dbs in projects:
 create_png_files(run_all_python_files=True,
                  exclude=['./run.py',
                           './conf.py',
-                          'beef/pbe.py'])
+                          './beef/pbe.py'])
