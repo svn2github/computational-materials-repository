@@ -1,32 +1,38 @@
 Bayesian error estimation functionals
 =====================================
 
+.. contents::
+    
 .. container:: article
 
     ...
 
-* :download:`Download raw data <beef.db>`
+* :download:`Download raw reference data <beef.db>`
+* :download:`Download raw GPAW data <beefgpaw.db>`
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dbeef>`_
 
 
 Key-value pairs
 ---------------
 
-=======  ===========================
+=======  ===========================================================
 key      description
-=======  ===========================
-name     Name of molecule/atom
+=======  ===========================================================
+name     Name of system (molecule, atom, bulk crystal, clean surface
+         or surface with adsorbate)
 ae       Atomization energy
+ce       Chemisorption energy
 xc       XC-functional
-db       Name of database: "G3/99"
+db       Name of database: "G3/99", "AE6", ...
 project  Name of the project: "beef"
-=======  ===========================
+=======  ===========================================================
 
 
 Functionals
 -----------
 
 .. literalinclude:: table.py
+    :start-after: future
 
 .. csv-table::
     :file: table.csv
@@ -47,3 +53,9 @@ This should print:
 .. literalinclude:: output.txt
 
 .. image:: hist.svg
+
+
+Running the calculations again
+------------------------------
+
+...
