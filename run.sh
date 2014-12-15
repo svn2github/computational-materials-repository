@@ -8,13 +8,9 @@ svn up
 cd ../cmr
 svn up
 
-# Copy db-files to Sphinx-folders:
-cd ../db-files
-for db in *.db; do cp $db ../cmr/${db%.*}; done
-
 # Run Python scripts:
 cd ../cmr
-PYTHONPATH=../ase:$PYTHONPATH python run.py
+PYTHONPATH=../ase:$PYTHONPATH python run.py copy
 
 # Build html:
 rm -rf build/*/*
