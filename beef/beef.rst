@@ -1,8 +1,6 @@
 Bayesian error estimation functionals
 =====================================
 
-.. contents::
-    
 .. container:: article
 
     Jess Wellendorff, Keld T. Lundgaard, Karsten W. Jacobsen, and
@@ -20,6 +18,8 @@ Bayesian error estimation functionals
 * :download:`Download raw GPAW data <beefgpaw.db>`
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dbeef>`_
 
+.. contents::
+    
 
 Key-value pairs
 ---------------
