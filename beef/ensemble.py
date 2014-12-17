@@ -6,8 +6,8 @@ c = ase.db.connect('beefgpaw.db')
 
 def ensemble(name):
     d = c.get(formula=name, xc='mBEEF')
-    bee = BEEFEnsemble(e=0, contribs=d.data.contributions, xc='mBEEF')
-    e = bee.get_ensemble_energies() + d.energy
+    bee = BEEFEnsemble(e=d.energy, contribs=d.data.contributions, xc='mBEEF')
+    e = bee.get_ensemble_energies()
     return e
     
 ae = 2 * ensemble('N') - ensemble('N2')
