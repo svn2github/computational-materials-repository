@@ -24,7 +24,8 @@ Porphyrin based dyes
 .. contents::
         
 * :download:`Download raw data <dssc.db>`
-* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Ddssc>`_
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Ddssc&
+  toggle=user,pbc,volume,E_gap,KS_gap>`_
 
 
 Key-value pairs
