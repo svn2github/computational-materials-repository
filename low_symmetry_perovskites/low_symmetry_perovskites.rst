@@ -26,7 +26,8 @@ Low symmetry perovskites
 
 * :download:`Download raw data <low_symmetry_perovskites.db>`
 * `Browse data
-  <http://cmrdb.fysik.dtu.dk/?query=project%3Dlow_symmetry_perovskites>`_
+  <http://cmrdb.fysik.dtu.dk/?query=project%3Dlow_symmetry_perovskites&
+  toggle=user,calculator,gllbsc_dir_gap,gllbsc_ind_gap,mass,phase>`_
 
 
 Key-value pairs

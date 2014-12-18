@@ -16,7 +16,8 @@ Bayesian error estimation functionals
 
 * :download:`Download raw reference data <beef.db>`
 * :download:`Download raw GPAW data <beefgpaw.db>`
-* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dbeef>`_
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dbeef&
+  toggle=user,mass,xc,db,ae,ce>`_
 
 .. contents::
     

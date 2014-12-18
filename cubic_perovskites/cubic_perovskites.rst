@@ -26,7 +26,9 @@ Perovskite water-splitting
     __ http:/dx.doi.org/
 
 * :download:`Download raw data <cubic_perovskites.db>`
-* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dcubic_perovskites>`_
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dcubic_perovskites&
+  toggle=user,calculator,gllbsc_dir_gap,gllbsc_ind_gap,mass,
+  heat_of_formation_all>`_
 
 
 Key-value pairs
