@@ -1,3 +1,4 @@
+# creates: gaps.svg
 """Plot the GLLB-SC, HSE06, GW approximations bandgaps for a
 set of 20 ternary and quaternary materials"""
 

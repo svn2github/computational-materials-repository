@@ -1,3 +1,4 @@
+# creates: gaps.csv
 """Calculate errors in band gap relative to GW"""
 from __future__ import print_function
 import numpy as np

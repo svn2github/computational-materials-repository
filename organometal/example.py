@@ -1,3 +1,4 @@
+# creates: example.svg
 """Plot the bandgaps as a function of the electronegativity
 in the Mulliken's scale for a given crystal symmetry (cubic,
 tetragonal, or orthorhombics)"""

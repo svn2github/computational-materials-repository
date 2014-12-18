@@ -1,3 +1,4 @@
+# creates: table.csv
 from __future__ import print_function
 import ase.db
 import numpy as np

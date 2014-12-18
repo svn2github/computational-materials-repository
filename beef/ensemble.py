@@ -1,3 +1,4 @@
+# creates: output.txt, hist.svg
 from __future__ import print_function
 import ase.db
 from ase.dft.bee import BEEFEnsemble

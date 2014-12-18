@@ -1,3 +1,4 @@
+# creates: homo-lumo.svg
 import matplotlib.pyplot as plt
 import ase.db
 
@@ -35,4 +36,4 @@ for M in ['Zn', 'TiO', 'H2']:  # metal centers
         plotter(M, A, c)
     plt.ylabel(r'Energy (eV)', fontsize=18)
     plt.xlabel(r'$E_{\mathrm{gap}}$ (eV)', fontsize=18)
-    plt.savefig('HOMO-LUMO.svg')
+    plt.savefig('homolumo.svg')

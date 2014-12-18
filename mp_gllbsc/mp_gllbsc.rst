@@ -45,7 +45,8 @@ Here, we calculated the errors in the band gaps at `\Gamma` for a set of 20
 ternary and quaternary materials releative to self-consitent GW:
 
 .. literalinclude:: table.py
-
+    :start-after: future
+    
 .. csv-table::
     :file: gaps.csv
     :header-rows: 1

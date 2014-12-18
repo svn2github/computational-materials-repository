@@ -62,9 +62,10 @@ project      Name of the project: "dssc"
 Example of how to use the database to create Figure S1 in the 2014 paper
 -------------------------------------------------------------------------
 
-.. include:: HOMO-LUMO.py
+.. include:: homolumo.py
+   :start-after: creates
    :code: python
 
-.. image:: HOMO-LUMO.svg
+.. image:: homolumo.svg
    :width: 600
 
