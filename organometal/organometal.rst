@@ -10,7 +10,7 @@ Organometal Halide Perovskites
 
     APL Materials, July 21, 2014
 
-    __ http://dx.doi.org
+    __ http://dx.doi.org/10.1063/1.4893495
 
 
 .. contents::
