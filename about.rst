@@ -19,10 +19,26 @@ Check out the source::
     $ svn co https://svn.fysik.dtu.dk/projects/cmr2/trunk cmr
     $ cd cmr
     
-Download database files and run Python scripts::
+Make sure you have an up to date ASE installation.  Then do::
     
     $ python run.py
     
+This will download the database files and run Python scripts to create images
+and other stuff needed for the webpages (.svg and .csv files).
+
 Build the html-files::
     
     $ make
+
+
+Modifying the pages
+-------------------
+
+Edit the ReST and Python files (.rst and .py files) and then run ``make``
+again and check the results::
+    
+    $ make
+    $ firefox build/html/index.html
+
+When things are OK, you can ``svn commit`` the updated files and the
+*cmr.fysik.dtu.dk* webpage will be updated automatically within an hour.
