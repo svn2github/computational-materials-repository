@@ -17,5 +17,5 @@ python extract.py dcdft_aims_tier2_z12.db
 ase-db dcdft.db calculator=aims,basis=tier2,relativistic=none -i dcdft_aims_tier2_nrel.db
 python extract.py dcdft_aims_tier2_nrel.db
 # ESPRESSO gbrv
-ase-db dcdft.db calculator=espresso,potentials=gbrv -i dcdft_pbe_espresso_gbrv.db
-python extract.py dcdft_pbe_espresso_gbrv.db
+ase-db dcdft.db calculator=espresso,potentials=gbrv -i dcdft_espresso_gbrv.db
+python extract.py dcdft_espresso_gbrv.db
