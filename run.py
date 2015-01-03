@@ -11,6 +11,7 @@ if len(sys.argv) == 2 and sys.argv[1] == 'copy':
 
 url = 'https://cmr.fysik.dtu.dk/_downloads/'
 projects = [('dssc', ['dssc']),
+            ('dcdft', ['dcdft', 'dcdft_gpaw_pw_setups09']),
             ('beef', ['beef', 'beefgpaw']),
             ('mp_gllbsc', ['mp_gllbsc']),
             ('organometal', ['organometal']),
