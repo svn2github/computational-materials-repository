@@ -13,4 +13,4 @@ html_style = 'cmr.css'
 html_title = 'COMPUTATIONAL MATERIALS REPOSITORY'
 html_favicon = 'static/cmr.ico'
 html_static_path = ['static']
-intersphinx_mapping = {'http://wiki.fysik.dtu.dk/ase': None}
+intersphinx_mapping = {'ase': ('http://wiki.fysik.dtu.dk/ase', None)}

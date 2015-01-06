@@ -6,9 +6,9 @@ What is CMR?
 Working with the databases
 --------------------------
 
-* ase-db command-line tool
+* :ref:`ase-db <ase:ase-db command>` command-line tool
 * :mod:`ase.db` Python module
-* web-interface
+* :ref:`web-interface <ase:ase-db-web>`
 
 
 Building this web-page
@@ -19,7 +19,8 @@ Check out the source::
     $ svn co https://svn.fysik.dtu.dk/projects/cmr2/trunk cmr
     $ cd cmr
     
-Make sure you have an up to date ASE installation.  Then do::
+Make sure you have an up to date :ref:`ASE <ase:download_and_install>` and
+Sphinx_ installation.  Then do::
     
     $ python run.py
     
@@ -29,6 +30,8 @@ and other stuff needed for the webpages (.svg and .csv files).
 Build the html-files::
     
     $ make
+
+.. _Sphinx: http://sphinx.pocoo.org/
 
 
 Modifying the pages
