@@ -1,5 +1,5 @@
 from ase.db import connect
-from gpaw import GPAW, PW, Mixer
+from gpaw import GPAW, PW, Mixer, FermiDirac
 
 cref = connect('beefgpaw.db')
 xc = 'PBE'
@@ -15,7 +15,8 @@ for name in names:
     atoms.cell += ([0, 0, 0], [0, 0.1, 0], [0, 0, 0.2])
     atoms.calc = GPAW(mode=PW(600),
                       xc=xc,
-                      mixer=Mixer(0.05, 5, 50),
+                      mixer=Mixer(0.25, 3, 1.0),
+                      occupations=FermiDirac(0.0, fixmagmom=True),
                       txt=name + '.' + xc + '.txt')
     atoms.get_forces()
     c.write(atoms, name=name, xc=xc)
