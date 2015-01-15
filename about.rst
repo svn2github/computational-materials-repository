@@ -6,7 +6,7 @@ What is CMR?
 Working with the databases
 --------------------------
 
-* :ref:`ase-db <ase:ase-db command>` command-line tool
+* :ref:`ase-db <ase:ase-db>` command-line tool
 * :mod:`ase.db` Python module
 * :ref:`web-interface <ase:ase-db-web>`
 
