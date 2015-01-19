@@ -8,19 +8,24 @@ svn up
 cd ../cmr
 svn up
 
-# Run Python scripts:
-cd ../cmr
-PYTHONPATH=../ase:$PYTHONPATH python run.py copy
+html=html.tar.gz
 
-# Build html:
-rm -rf build/*/*
-make html
+if [ ase -nt $html ] || [ cmr -nt $html ] || [ db-files -nt $html ]
+then
+    # Run Python scripts:
+    cd ../cmr
+    PYTHONPATH=../ase:$PYTHONPATH python run.py copy
 
-# Use https for mathjax:
-cd build
-find -name "*.html" | xargs \
-    sed -i "s%http://cdn.mathjax.org%https://cdn.mathjax.org%"
+    # Build html:
+    rm -rf build/*/*
+    make html
+
+    # Use https for mathjax:
+    cd build
+    find -name "*.html" | xargs \
+	sed -i "s%http://cdn.mathjax.org%https://cdn.mathjax.org%"
     
-tar -czf html.tar.gz html
-mv html.tar.gz ../..
-cd ../..
+    tar -czf $html html
+    mv $html ../..
+    cd ../..
+fi
