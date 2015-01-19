@@ -20,8 +20,8 @@ Check out the source::
     $ svn co https://svn.fysik.dtu.dk/projects/cmr2/trunk cmr
     $ cd cmr
     
-Make sure you have an up to date :ref:`ASE <ase:download_and_install>` and
-Sphinx_ installation.  Then do::
+Make sure you have up to date :ref:`ASE <ase:download_and_install>` and
+Sphinx_ installations.  Then do::
     
     $ python run.py
     
