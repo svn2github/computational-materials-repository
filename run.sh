@@ -1,5 +1,3 @@
-set -e  # stop after errors
-
 # Update ASE:
 cd ase
 svn up
@@ -10,10 +8,11 @@ svn up
 cd ..
 
 html=html.tar.gz
-
-changes=`(find ase -newer $html | grep -v .svn;
-          find cmr -newer $html | grep -v .svn;
+changes=`(find ase -newer $html | grep -v .svn; \
+          find cmr -newer $html | grep -v .svn; \
           find db-files -newer $html)`
+echo Changes:
+echo $changes
 if [ -n "$changes" ]
 then
     cd cmr
