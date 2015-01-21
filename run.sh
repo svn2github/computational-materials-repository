@@ -11,7 +11,10 @@ cd ..
 
 html=html.tar.gz
 
-if [ ase -nt $html ] || [ cmr -nt $html ] || [ db-files -nt $html ]
+changes=`(find ase -newer $html | grep -v .svn;
+          find cmr -newer $html | grep -v .svn;
+          find db-files -newer $html)`
+if [ -n "$changes" ]
 then
     cd cmr
     # Run Python scripts:
