@@ -29,6 +29,7 @@ gllbsc_dir_gap  Direct bandgap calculated with GLLB-SC.
 gllbsc_ind_gap  Indirect bandgap calculated with GLLB-SC.
 gllbsc_disc     Derivative discontinuity calculated with GLLB-SC.
 mpid            "Materials project" id
+icsd_id         "ICSD" id
 g0w0_gap        `G_0W_0` gap at `\Gamma`
 gw0_gap         `GW_0` gap at `\Gamma`
 gw_gap          `GW` gap at `\Gamma`
