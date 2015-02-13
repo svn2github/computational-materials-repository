@@ -17,7 +17,7 @@ if [ -n "$changes" ]
 then
     cd cmr
     # Run Python scripts:
-    PYTHONPATH=../ase:$PYTHONPATH python run.py copy
+    PYTHONPATH=../ase:$PYTHONPATH python run.py --copy
 
     # Build html:
     rm -rf build/*/*
@@ -26,7 +26,7 @@ then
     # Use https for mathjax:
     cd build
     find -name "*.html" | xargs \
-	sed -i "s%http://cdn.mathjax.org%https://cdn.mathjax.org%"
+        sed -i "s%http://cdn.mathjax.org%https://cdn.mathjax.org%"
     
     tar -czf $html html
     mv $html ../..
