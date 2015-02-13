@@ -1,4 +1,4 @@
-# creates: homo-lumo.svg
+# creates: homolumo.svg
 import matplotlib.pyplot as plt
 import ase.db
 
