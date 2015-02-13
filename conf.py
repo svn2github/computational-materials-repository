@@ -13,4 +13,5 @@ html_style = 'cmr.css'
 html_title = 'COMPUTATIONAL MATERIALS REPOSITORY'
 html_favicon = 'static/cmr.ico'
 html_static_path = ['static']
+html_last_updated_fmt = '%a, %d %b %Y %H:%M:%S'
 intersphinx_mapping = {'ase': ('http://wiki.fysik.dtu.dk/ase', None)}
