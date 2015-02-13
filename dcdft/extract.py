@@ -20,23 +20,17 @@ else:
 
 c = ase.db.connect(db)
 
-def analyse(c, collection):
 
+def analyse(c, collection):
     A = []
     for name in collection.names:
         ve = []  # volume, energy pairs
-        for d in c.select(name=name):
-            try:
-                ve.append((abs(np.linalg.det(d.cell)), d.energy))
-            except AttributeError:
-                ve.append((np.nan, np.nan))
-
-        # sort according to volume
-        ves = sorted(ve, key=lambda x: x[0])
+        for d in c.select(name=name, sort='volume'):
+            ve.append((d.volume, d.energy))
 
         # EOS
-        eos = EquationOfState([t[0] for t in ves],
-                              [t[1] for t in ves])
+        eos = EquationOfState([t[0] for t in ve],
+                              [t[1] for t in ve])
         try:
             v, e, B0, B1, R = eos.fit()
         except (ValueError, TypeError, LinAlgError):
