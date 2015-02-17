@@ -54,3 +54,21 @@ reference              "standard" (used to calculate the standard
                        heat of formation) or "pool" (reference included in
                        the calculation of the convex hull)
 =====================  =======================================================
+
+
+ABO3 candidates for water splitting
+-----------------------------------
+
+.. literalinclude:: abo3.py
+
+The 10 candidates are:
+    
+.. csv-table::
+    :file: abo3.csv
+    :header-rows: 1
+
+Here are the band gaps:
+    
+.. image:: abo3.svg
+
+.. literalinclude:: abo3fig.py
