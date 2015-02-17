@@ -26,4 +26,5 @@ for row in con.select(combination='ABO3'):
          3.1 > row.gllbsc_dir_gap > 1.4) and
         (row.VB_ind - 4.5 > 1.23 and row.CB_ind - 4.5 < 0 or
          row.VB_dir - 4.5 > 1.23 and row.CB_dir - 4.5 < 0)):
-        print('{0}, {1}, {2:.3f}'.format(row.id, row.formula, heat), file=fd)
+        formula = row.A_ion + row.B_ion + row.anion
+        print('{0}, {1}, {2:.3f}'.format(row.id, formula, heat), file=fd)

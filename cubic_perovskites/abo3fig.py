@@ -6,10 +6,11 @@ rows = []
 for i, line in enumerate(open('abo3.csv')):
     if line[0] == '#':
         continue
-    id = int(line.split(',')[0])
+    id, formula = line.split(',')[:2]
+    id = int(id)
     row = con.get(id)
     rows.append(row)
-    plt.text(i - 1.25, -1.9, row.formula, rotation=60)
+    plt.text(i - 1.25, -1.9, formula, rotation=60)
 
 N = len(rows)
 x = range(N)
