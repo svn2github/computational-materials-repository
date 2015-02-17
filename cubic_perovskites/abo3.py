@@ -1,6 +1,6 @@
 from __future__ import print_function
 import ase.db
-from ase.phasespace import PhaseSpace
+from ase.phasediagram import PhaseDiagram
 
 con = ase.db.connect('cubic_perovskites.db')
 
@@ -18,8 +18,8 @@ for row in con.select(combination='ABO3'):
                 break
         else:
             refs.append(ref)
-    ps = PhaseSpace(refs, verbose=False)
-    energy = ps.find(**count)[0]
+    pd = PhaseDiagram(refs, verbose=False)
+    energy = pd.find(**count)[0]
     heat = (row.energy - energy) / row.natoms
     if (heat < 0.21 and
         (3.1 > row.gllbsc_ind_gap > 1.4 or
