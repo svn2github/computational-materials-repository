@@ -13,6 +13,7 @@ Projects:
    low_symmetry_perovskites/low_symmetry_perovskites
    beef/beef
    dcdft/dcdft
+   c2dm/c2dm
    
 `Older CMR-projects <https://cmr1.fysik.dtu.dk/cmr/index.php>`_:
 
