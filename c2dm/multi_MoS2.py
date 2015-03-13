@@ -1,4 +1,6 @@
 # creates: epsMoS2.svg
+import sys
+sys.path.insert(0, '.')
 import pickle
 from ase.db import connect
 

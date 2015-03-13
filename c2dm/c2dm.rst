@@ -72,7 +72,7 @@ As an example the macroscopic dielectric function of multilayer MoS2 can be
 obtained. First we extract the data for MoS2 from the database:
 
 .. literalinclude:: multi_MoS2.py
-    :lines: 2-
+    :lines: 4-
     :end-before: Calculate
 
 Then the QEH module is used to calculate the dielectric function for one
