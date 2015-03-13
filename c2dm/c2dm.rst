@@ -22,13 +22,15 @@ Key-value pairs
 =====================  =======================================================
 key                    description
 =====================  =======================================================
-name                   Name of 2D material, given byphase and chemical formula. For example 'T-MoS2'
+name                   Name of 2D material, written as phase followed by chemical formula. For example 'T-MoS2'
 
 Egap_G0W0              Quasiparticle energy gap 
 
 data                   Dictionary with the dielectric building block of each material
 
 =====================  =======================================================
+
+The data entry contains the data that makes up the dielectric building block of each material, which can be used to build van der waals heterostructures.  
 
 Keys within data dictionary
 ---------------
@@ -54,15 +56,15 @@ drho_dipole            Dipole induced density, array of dimension (q x z)
 
 The quantum electrostatic heterostructure (QEH) model
 -------------------------------------------------------
-The dielectric function of van der waals heterostructures and associated properties can be calculated with the python module, *QEH.py*, that can be downloaded from here: :download:`QEH.py`, and is also available trough GPAW (link and write more)
+The dielectric function of van der waals heterostructures and associated properties can be calculated with the python module, *QEH.py*, that can be downloaded from here: :download:`QEH.py`, and is also available trough GPAW (link and write more). 
 
-As an example the macroscopic dielectric function of multilayer MoS2 can be calculated. 
-First we extract the data for MoS2: 
+As an example the macroscopic dielectric function of multilayer MoS2 can be obtained. 
+First we extract the data for MoS2 from the database:
 
 .. literalinclude:: multi_MoS2.py
     :lines: 1-19	
 
-Then we use the QEH module to calculate the dielectric function for for one to 20 layers: 
+Then the QEH module is used to calculate the dielectric function for for one to 20 layers of MoS2.  
 
 .. literalinclude:: multi_MoS2.py
     :lines: 20-	    
@@ -71,5 +73,5 @@ Which should return this result:
 
 .. image:: epsMoS2.png
 
-The structure is set up with the structure parameter, that should be a list of speciems within the structure. For example a heterostructure of graphene, BN and MoS2 can be defined like: structure=['3H-MoS2', '2BN','graphene', '2BN', '3H-MoS2'], which will give one layer of graphene sandwiched between two layers of hBN and three layers of MoS2 on each side. 
+The structure is set up with the structure parameter, that should be a list of speciems within the structure. In this case structure=['20MoS2'] gives 20 layers of MoS2. As an example a more complicated heterostructure of graphene, BN and MoS2 can be set up with: structure=['3H-MoS2', '2BN','graphene', '2BN', '3H-MoS2'], which will give one layer of graphene sandwiched between two layers of hBN and three layers of MoS2 on each side. 
 The d parameter should be a list of the distance bewteen all neigboring layers, with a length equal to N-1, where N is the number of layers in the structure. 

@@ -24,12 +24,12 @@ from QEH import Heterostructure
 import pylab as p
 for n in [1,2,3,4,5,10,20]:
     d = [6.15 for i in range(n-1)]
-    HS = Heterostructure(structure = ['%dH-MoS2'%n], 
-                         d=d,
-                         include_dipole=True, 
-                         Emax=0,
-                         qmax=1,
-                         d0 = 6.15) 
+    HS = Heterostructure(structure = ['%dH-MoS2'%n],  # set up structure
+                         d=d,                         # layer distance array
+                         include_dipole=True,         
+                         wmax=0,                      # only include w=0
+                         qmax=1,                      # q grid up to 1 Ang^{-1}
+                         d0 = 6.15)                   # width of single layer
     q, epsM = HS.get_macroscopic_dielectric_function()
     p.plot(q, epsM, label=' N = %s'%n)
 

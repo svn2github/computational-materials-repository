@@ -11,7 +11,7 @@ class Heterostructure:
         and related physical quantities."""
     def __init__(self, structure, d,
                  include_dipole=True, d0=None,
-                 Emax=10, qmax=None):
+                 wmax=10, qmax=None):
         """Creates a Heterostructure object.
         
         structure: list of str
@@ -27,7 +27,7 @@ class Heterostructure:
             calculation. The layer separation in bulk is typically a good measure.  
         include_dipole: Bool
             Includes dipole contribution if True 
-        Emax: float
+        wmax: float
             Cutoff for energy grid (eV)
         qmax: float
             Cutoff for wave-vector grid (1/Ang)
@@ -63,8 +63,8 @@ class Heterostructure:
                     qindex = np.argmin(abs(q-qmax * Bohr))+1
                 else: 
                     qindex = -1
-                if Emax is not None:
-                    windex = np.argmin(abs(w-Emax / Hartree))+1
+                if wmax is not None:
+                    windex = np.argmin(abs(w-wmax / Hartree))+1
                 else:
                     windex = -1
                 chi_monopole.append(np.array(chim[:qindex, :windex]))
