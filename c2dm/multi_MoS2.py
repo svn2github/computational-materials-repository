@@ -1,23 +1,8 @@
 # creates: epsMoS2.svg
+import os
 import sys
 sys.path.insert(0, '.')
-import pickle
-from ase.db import connect
-
-# Extract data and save to .pckl files:
-c = connect('c2dm.db')
-names = ['H-MoS2']
-for name in names:
-    d = c.get(name=name)
-    pickle.dump((d.data.q,
-                 d.data.frequencies,
-                 d.data.chi_monopole,
-                 d.data.chi_dipole,
-                 d.data.z,
-                 d.data.drho_monopole,
-                 d.data.drho_dipole),
-                open('%s-chi.pckl' % name, 'w'),
-                pickle.HIGHEST_PROTOCOL)
+os.system('tar xf chi-data.tar.gz; mv chi-data/H-MoS2-chi.pckl .')
 
 # Calculate static dielectric function for multilayer MoS2 for 1 to 20 layers:
 from qeh import Heterostructure

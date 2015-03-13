@@ -12,7 +12,7 @@ Computational 2-d materials
     __ http:/dx.doi.org/
 
 
-* :download:`Download raw data <c2dm.db>`
+* Download raw data: :download:`c2dm.db`, :download:`chi-data.tar.gz`
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dc2dm&
   toggle=name,Egap_G0W0>`_
 
@@ -69,12 +69,11 @@ downloaded from here: :download:`qeh.py`, and is also available trough GPAW
 (link and write more).
 
 As an example the macroscopic dielectric function of multilayer MoS2 can be
-obtained. First we extract the data for MoS2 from the database:
+obtained. First we extract the data for MoS2 from the database::
 
-.. literalinclude:: multi_MoS2.py
-    :lines: 4-
-    :end-before: Calculate
-
+    $ tar xf chi-data.tar.gz
+    $ cp chi-data/H-MoS2-chi.pckl .
+    
 Then the QEH module is used to calculate the dielectric function for one
 to 20 layers of MoS2.
 
