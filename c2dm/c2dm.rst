@@ -41,7 +41,7 @@ quantity                  description
 =====================  =======================================================
 q                      Grid for parallel momentum transfers
 
-frequencies            Energy grid
+frequencies            frequency grid
 
 chi_monopole           Monopole density response function, array of dimension
                        (q x frequencies)
