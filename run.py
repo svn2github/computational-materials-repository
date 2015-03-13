@@ -14,7 +14,8 @@ projects = [('dssc', ['dssc']),
             ('mp_gllbsc', ['mp_gllbsc']),
             ('organometal', ['organometal']),
             ('cubic_perovskites', ['cubic_perovskites']),
-            ('low_symmetry_perovskites', ['low_symmetry_perovskites'])]
+            ('low_symmetry_perovskites', ['low_symmetry_perovskites']),
+            ('c2dm', ['c2dm'])]
 
 parser = optparse.OptionParser()
 parser.add_option('--copy', action='store_true')
