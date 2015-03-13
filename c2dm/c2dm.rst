@@ -61,8 +61,8 @@ The quantum electrostatic heterostructure (QEH) model
 -----------------------------------------------------
 
 The dielectric function of van der waals heterostructures and associated
-properties can be calculated with the python module, *qeh.py*, that can be
-downloaded from here: :download:`qeh.py`, and is also available trough GPAW.
+properties can be calculated with the python module in the scripe, *qeh.py*, 
+that can be downloaded from here: :download:`qeh.py`, and is also available trough GPAW.
 
 As an example the macroscopic dielectric function of multilayer MoS2 can be
 obtained. First we extract the data for MoS2 from the database::
@@ -70,7 +70,7 @@ obtained. First we extract the data for MoS2 from the database::
     $ tar xf chi-data.tar.gz
     $ cp chi-data/H-MoS2-chi.pckl .
     
-Then the QEH module is used to calculate the dielectric function for one
+Then the Heterostructure module is used to calculate the dielectric function for one
 to 20 layers of MoS2.
 
 .. literalinclude:: multi_MoS2.py
@@ -83,7 +83,7 @@ Which should return this result:
 The structure is set up with the structure parameter, that should be a list of
 speciems within the structure. In this case ``structure=['20MoS2']`` gives 20
 layers of MoS2. As an example a more complicated heterostructure of graphene,
-BN and MoS2 can be set up with: ``structure=['3H-MoS2', '2BN','graphene', '2BN',
+hBN and MoS2 can be set up with: ``structure=['3H-MoS2', '2BN','graphene', '2BN',
 '3H-MoS2']``, which will give one layer of graphene sandwiched between two
 layers of hBN and three layers of MoS2 on each side. The d parameter should be
 a list of the distance bewteen all neigboring layers, with a length equal to
