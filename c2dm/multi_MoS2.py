@@ -18,7 +18,7 @@ for name in names:
                 pickle.HIGHEST_PROTOCOL)
 
 # Calculate static dielectric function for multilayer MoS2 for 1 to 20 layers:
-from QEH import Heterostructure
+from qeh import Heterostructure
 import matplotlib.pyplot as plt
 for n in [1, 2, 3, 4, 5, 10, 20]:
     d = [6.15 for i in range(n - 1)]
