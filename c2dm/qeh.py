@@ -15,18 +15,19 @@ class Heterostructure:
         """Creates a Heterostructure object.
         
         structure: list of str
-            Heterostructure set up. Each entry should number of layers + 
-            chemical formula. For example: ['3H-MoS2', graphene', '10H-WS2'] 
-            gives 3 layers of H-MoS2, 1 layer of graphene and 10 layers 
+            Heterostructure set up. Each entry should number of layers +
+            chemical formula. For example: ['3H-MoS2', graphene', '10H-WS2']
+            gives 3 layers of H-MoS2, 1 layer of graphene and 10 layers
             of H-WS2.
         d: array of float
             interlayer distances between neighboring layers in Ang
             Length of array = number of layers - 1
         d0: float
             The width of a single layer in Ang, only used for monolayer
-            calculation. The layer separation in bulk is typically a good measure.  
+            calculation. The layer separation in bulk is typically a good
+            measure.
         include_dipole: Bool
-            Includes dipole contribution if True 
+            Includes dipole contribution if True
         wmax: float
             Cutoff for energy grid (eV)
         qmax: float
@@ -41,7 +42,7 @@ class Heterostructure:
         else:
             self.chi_dipole = None
             drho_dipole = None
-        self.z=[]
+        self.z = []
         layer_indices = []
         self.n_layers = 0
         namelist = []
@@ -60,11 +61,11 @@ class Heterostructure:
                 name += '-chi.pckl'
                 q, w, chim, chid, zi, drhom, drhod = pickle.load(open(name))
                 if qmax is not None:
-                    qindex = np.argmin(abs(q-qmax * Bohr))+1
-                else: 
+                    qindex = np.argmin(abs(q - qmax * Bohr)) + 1
+                else:
                     qindex = -1
                 if wmax is not None:
-                    windex = np.argmin(abs(w-wmax / Hartree))+1
+                    windex = np.argmin(abs(w - wmax / Hartree)) + 1
                 else:
                     windex = -1
                 chi_monopole.append(np.array(chim[:qindex, :windex]))
@@ -75,17 +76,17 @@ class Heterostructure:
                 self.z.append(np.array(zi))
             else:
                 n = namelist.index(name)
-            indices = [n for i in range(int(num))]       
-            layer_indices = np.append(layer_indices, indices)        
+            indices = [n for i in range(int(num))]
+            layer_indices = np.append(layer_indices, indices)
         self.layer_indices = np.array(layer_indices, dtype=int)
 
         self.q_abs = q[:qindex]
         self.frequencies = w[:windex]
-        self.n_types=len(namelist)
+        self.n_types = len(namelist)
 
-        # layers and distances    
+        # layers and distances
         self.d = np.array(d) / Bohr  # interlayer distances
-        if self.n_layers > 1:  
+        if self.n_layers > 1:
             # space around each layer
             self.s = (np.insert(self.d, 0, self.d[0]) + \
                       np.append(self.d, self.d[-1])) / 2.
@@ -102,7 +103,8 @@ class Heterostructure:
         system_size = np.sum(self.d) + edgesize
         self.z_lim = system_size
         self.dz = 0.01
-        self.z_big = np.arange(0, self.z_lim, self.dz) - edgesize/2.  # master grid
+        # master grid
+        self.z_big = np.arange(0, self.z_lim, self.dz) - edgesize / 2.
         self.z0 = np.append(np.array([0]), np.cumsum(self.d))
 
         # arange potential and density
@@ -167,6 +169,9 @@ class Heterostructure:
                 drho_m = self.drho_monopole[i][iq].copy()
                 poisson_m = self.solve_poisson_1D(drho_m, q, z)
                 z_poisson = self.get_z_grid(z, z_lim=self.poisson_lim)
+                if not len(z_poisson) == len(np.real(poisson_m)):
+                    z_poisson = z_poisson[:len(poisson_m)]
+                    poisson_m = poisson_m[:len(z_poisson)]
                 fm = interp1d(z_poisson, np.real(poisson_m))
                 fm2 = interp1d(z_poisson, np.imag(poisson_m))
                 if self.chi_dipole is not None:
@@ -207,7 +212,7 @@ class Heterostructure:
 
         z_lim = int(z_lim / dz) * dz
         z_grid = np.insert(z, 0, np.arange(-z_lim, z[0], dz))
-        z_grid = np.append(z_grid, np.arange(z[-1] + dz, z_lim+dz, dz))
+        z_grid = np.append(z_grid, np.arange(z[-1] + dz, z_lim + dz, dz))
         return z_grid
     
     def potential_model(self, q, z, z0=0, dipole=False, delta=None):
@@ -229,9 +234,9 @@ class Heterostructure:
         Solves poissons equation in 1D using finite difference method.
         
         drho: induced potential basis function
-        q: momentum transfer. 
+        q: momentum transfer.
         """
-        z -= np.mean(z) # center arround 0
+        z -= np.mean(z)  # center arround 0
         z_grid = self.get_z_grid(z, z_lim=self.poisson_lim)
         dz = z[1] - z[0]
         Nz_loc = (len(z_grid) - len(z)) / 2
@@ -260,20 +265,19 @@ class Heterostructure:
 
         # Getting the Potential
         M_inv = np.linalg.inv(M)
-        dphi = np.dot(M_inv, f_z) 
+        dphi = np.dot(M_inv, f_z)
         return dphi
     
-        
     def get_Coulomb_Kernel(self, step_potential=False):
         kernel_qij = np.zeros([len(self.q_abs), self.dim, self.dim],
                               dtype=complex)
         factor = self.dim / self.n_layers
         for iq in range(len(self.q_abs)):
-            if step_potential:  
+            if step_potential:
                 # Use step-function average for monopole contribution
                 kernel_qij[iq] = np.dot(self.basis_array[:, iq],
                                         self.dphi_array[:, iq].T) * self.dz
-            else: # Normal kernel 
+            else:  # Normal kernel
                 kernel_qij[iq] = np.dot(self.drho_array[:, iq],
                                         self.dphi_array[:, iq].T) * self.dz
                 
@@ -386,7 +390,7 @@ class Heterostructure:
     def get_response(self, iw=0, dipole=False):
         """
         Induced density and potential due to constant perturbation, V_ext
-        obtained as: rho_ind = chi_full V_ext 
+        obtained as: rho_ind = chi_full V_ext.
         """
         constant_perturbation = np.ones([self.n_layers])
         if self.chi_dipole is not None:
@@ -406,7 +410,8 @@ class Heterostructure:
         
         drho_array = self.drho_array.copy()
         dphi_array = self.dphi_array.copy()
-        # Expand on potential and density basis function to get spatial detendence
+        # Expand on potential and density basis function
+        # to get spatial detendence
         for iq in range(len(self.q_abs)):
             chi_ij = chi_qij[iq]
             Vind_qi = np.dot(chi_ij, np.array(constant_perturbation))
@@ -416,8 +421,8 @@ class Heterostructure:
     
     def get_plasmon_eigenmodes(self):
         """
-        Diagonalize the dieletric matrix to get the plasmon eigenresonances 
-        of the system 
+        Diagonalize the dieletric matrix to get the plasmon eigenresonances
+        of the system
         """
         eps_qwij = self.get_eps_matrix()
         Nw = len(self.frequencies)
@@ -472,11 +477,10 @@ class Heterostructure:
 
         return eig, self.z_big * Bohr, rho_z, phi_z, np.array(omega0)
 
-
 """TOOLS"""
 
 
-def get_chi_2D(filenames=None,name=None):
+def get_chi_2D(filenames=None, name=None):
     """Calculate the monopole and dipole contribution to the
     2D susceptibillity chi_2D, defined as
 
@@ -587,4 +591,3 @@ def read_chi_wGG(name):
     for chi_GG in chi_wGG:
         chi_GG[:] = pickle.load(fd)
     return omega_w, pd, chi_wGG, q0
-

@@ -28,19 +28,16 @@ name                   Name of 2D material, written as phase followed by
 
 Egap_G0W0              Quasiparticle energy gap
 
-data                   Dictionary with the dielectric building block of each
-                       material
 =====================  =======================================================
 
-The data entry contains the data that makes up the dielectric building block
-of each material, which can be used to build van der waals heterostructures.
+The dielectric building blocks of the materials, that can be used to build van der Waals heterostructures, is obtained from the file *chi-data.tar.gz*. This contains a pickle file for each material with the data described below: 
 
 
-Keys within data dictionary
+Dielectric building blocks
 ---------------------------
 
 =====================  =======================================================
-key                    description
+quantity                  description
 =====================  =======================================================
 q                      Grid for parallel momentum transfers
 
@@ -65,8 +62,7 @@ The quantum electrostatic heterostructure (QEH) model
 
 The dielectric function of van der waals heterostructures and associated
 properties can be calculated with the python module, *qeh.py*, that can be
-downloaded from here: :download:`qeh.py`, and is also available trough GPAW
-(link and write more).
+downloaded from here: :download:`qeh.py`, and is also available trough GPAW.
 
 As an example the macroscopic dielectric function of multilayer MoS2 can be
 obtained. First we extract the data for MoS2 from the database::
