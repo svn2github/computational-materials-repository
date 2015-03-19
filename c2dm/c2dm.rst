@@ -5,7 +5,7 @@ Computational 2-d materials
 
     Andersen, K., Latini, S., Thygesen, K. S.
     
-    `Dielectric building blocks of van der Waals heterostructures.`__
+    `The Dielectric Genome of van der Waals Heterostructures.`__
 
     (Submitted)
 
