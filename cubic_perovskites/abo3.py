@@ -4,22 +4,14 @@ from ase.phasediagram import PhaseDiagram
 
 con = ase.db.connect('cubic_perovskites.db')
 
-references = [(row.count_atoms(), row.energy)
+references = [(row.formula, row.energy)
               for row in con.select('reference')]
 
 fd = open('abo3.csv', 'w')
 print('# id, formula, heat of formation [eV/atom]', file=fd)
 for row in con.select(combination='ABO3'):
-    count = row.count_atoms()
-    refs = []
-    for ref in references:
-        for symbol in ref[0]:
-            if symbol not in count:
-                break
-        else:
-            refs.append(ref)
-    pd = PhaseDiagram(refs, verbose=False)
-    energy = pd.find(**count)[0]
+    pd = PhaseDiagram(references, filter=row.formula, verbose=False)
+    energy = pd.decompose(row.formula)[0]
     heat = (row.energy - energy) / row.natoms
     if (heat < 0.21 and
         (3.1 > row.gllbsc_ind_gap > 1.4 or
