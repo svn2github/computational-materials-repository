@@ -1,3 +1,5 @@
+.. _organometal:
+
 Organometal Halide Perovskites
 ==============================
 

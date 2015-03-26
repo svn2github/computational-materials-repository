@@ -1,9 +1,3 @@
-What is CMR?
-============
-
-...
-
-
 Working with the databases
 --------------------------
 

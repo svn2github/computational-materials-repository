@@ -1,3 +1,5 @@
+.. _low_symmetry_perovskites:
+
 Low symmetry perovskites
 ========================
 

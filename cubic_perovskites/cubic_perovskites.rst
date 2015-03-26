@@ -1,3 +1,5 @@
+.. _cubic_perovskites:
+
 Perovskite water-splitting
 ==========================
 

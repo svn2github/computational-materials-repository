@@ -1,3 +1,5 @@
+.. _mp_gllbsc:
+
 New Light Harvesting Materials
 ==============================
 

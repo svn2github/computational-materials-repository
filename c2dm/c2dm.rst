@@ -1,3 +1,5 @@
+.. _c2dm:
+
 Computational 2-d materials
 ===========================
 

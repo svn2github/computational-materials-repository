@@ -1,3 +1,5 @@
+.. _beef:
+
 Bayesian error estimation functionals
 =====================================
 
