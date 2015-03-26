@@ -1,12 +1,8 @@
-HOME
-====
+Projects
+========
 
 .. list-table::
-   :header-rows: 1
 
-   * - Projects
-     -
-     
    * - .. image:: organometal.png
           :width: 189px
           :height: 124px
