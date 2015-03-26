@@ -35,7 +35,7 @@ for dir, names in downloads:
             else:
                 print('Downloading', path)
                 if dir == '.':
-                    name = '../' + name
+                    name = '../_images/' + name
                 urllib.urlretrieve(url + name, path)
         
 create_png_files()
