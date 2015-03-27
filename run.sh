@@ -10,7 +10,7 @@ cd ..
 html=html.tar.gz
 changes=`(find ase -newer $html | grep -v .svn; \
           find cmr -type f -newer $html | grep -v .svn; \
-          find db-files -newer $html)`
+          find downloads -newer $html)`
 echo Changes:
 echo $changes
 if [ -n "$changes" ]
