@@ -25,10 +25,38 @@ Key-value pairs
 =====================  =======================================================
 key                    description
 =====================  =======================================================
-name                   Name of 2D material, written as phase followed by
-                       chemical formula. For example 'T-MoS2'
+name                   Name or chemical formula of the material
+phase                  Designation of the phase of the material, either 'H' or 'T'
 
-Egap_G0W0              Quasiparticle energy gap
+xc                     Exchange-correlation functional used
+
+hform                  Heat of formation
+hform_fere             Heat of formation based on fitted elemental
+                       phase reference energies
+
+ind_gap                DFT indirect band gap
+dir_gap                DFT direct band gap
+vbm                    DFT valence band maximum relative to vacuum
+cbm                    DFT conduction band minimum relative to vacuum
+
+ind_gap_g0w0           G0W0 indirect band gap
+dir_gap_g0w0           G0W0 direct band gap
+vbm_g0w0               G0W0 valence band maximum
+cbm_g0w0               G0W0 conduction band minimum
+emass1_g0w0            G0W0 electron mass (direction 1 - smallest)
+emass2_g0w0            G0W0 electron mass (direction 2 - largest)
+hmass1_g0w0            G0W0 hole mass (direction 1 - smallest)
+hmass2_g0w0            G0W0 hole mass (direction 2 - largest)
+ind_exmass1_g0w0       G0W0 indirect exciton mass (direction 1 - smallest)
+ind_exmass2_g0w0       G0W0 indirect exciton mass (direction 2 - largest)
+dir_exmass1_g0w0       G0W0 direct exciton mass (direction 1 - smallest)
+dir_exmass2_g0w0       G0W0 direct exciton mass (direction 2 - largest)
+
+q2d_macro_df_slope     Slope of macroscopic 2D static dielectric function at
+                       q=0
+
+ind_ex_eb              Indirect exciton binding energy
+dir_ex_eb              Direct exciton binding energy
 
 =====================  =======================================================
 
