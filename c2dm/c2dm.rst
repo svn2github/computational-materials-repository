@@ -1,6 +1,6 @@
 .. _c2dm:
 
-Computational 2-d materials
+Two-dimensional materials
 ===========================
 
 .. container:: article
