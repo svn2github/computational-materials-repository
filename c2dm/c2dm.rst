@@ -1,7 +1,14 @@
 .. _c2dm:
 
-Two-dimensional materials
-===========================
+2D Materials
+
+.. container:: article
+
+    Rasmussen, F., Thygesen, K. S.
+    
+    `Computational 2D Materials Database: Electronic Structure of Transition Metal Dichalcogenides and Oxides`__
+
+    (Submitted)
 
 .. container:: article
 
@@ -15,8 +22,9 @@ Two-dimensional materials
 
 
 * Download raw data: :download:`c2dm.db`, :download:`chi-data.tar.gz`
-* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dc2dm&
-  toggle=name,Egap_G0W0>`_
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dc2dm&toggle=name>`_
+
+This database contains calculated structural and electronic properties of a range of 2D materials.
 
 
 Key-value pairs
@@ -47,16 +55,9 @@ emass1_g0w0            G0W0 electron mass (direction 1 - smallest)
 emass2_g0w0            G0W0 electron mass (direction 2 - largest)
 hmass1_g0w0            G0W0 hole mass (direction 1 - smallest)
 hmass2_g0w0            G0W0 hole mass (direction 2 - largest)
-ind_exmass1_g0w0       G0W0 indirect exciton mass (direction 1 - smallest)
-ind_exmass2_g0w0       G0W0 indirect exciton mass (direction 2 - largest)
-dir_exmass1_g0w0       G0W0 direct exciton mass (direction 1 - smallest)
-dir_exmass2_g0w0       G0W0 direct exciton mass (direction 2 - largest)
 
 q2d_macro_df_slope     Slope of macroscopic 2D static dielectric function at
                        q=0
-
-ind_ex_eb              Indirect exciton binding energy
-dir_ex_eb              Direct exciton binding energy
 
 =====================  =======================================================
 
