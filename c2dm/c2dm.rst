@@ -1,14 +1,18 @@
 .. _c2dm:
 
 2D Materials
+============
 
 .. container:: article
 
     Rasmussen, F., Thygesen, K. S.
     
-    `Computational 2D Materials Database: Electronic Structure of Transition Metal Dichalcogenides and Oxides`__
+    `Computational 2D Materials Database: Electronic Structure of Transition
+    Metal Dichalcogenides and Oxides`__
 
     (Submitted)
+
+    __ http:/dx.doi.org/
 
 .. container:: article
 
@@ -24,7 +28,8 @@
 * Download raw data: :download:`c2dm.db`, :download:`chi-data.tar.gz`
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dc2dm&toggle=name>`_
 
-This database contains calculated structural and electronic properties of a range of 2D materials.
+This database contains calculated structural and electronic properties of a
+range of 2D materials.
 
 
 Key-value pairs
@@ -34,19 +39,16 @@ Key-value pairs
 key                    description
 =====================  =======================================================
 name                   Name or chemical formula of the material
-phase                  Designation of the phase of the material, either 'H' or 'T'
-
+phase                  Designation of the phase of the material, either 'H' or
+                       'T'
 xc                     Exchange-correlation functional used
-
 hform                  Heat of formation
 hform_fere             Heat of formation based on fitted elemental
                        phase reference energies
-
 ind_gap                DFT indirect band gap
 dir_gap                DFT direct band gap
 vbm                    DFT valence band maximum relative to vacuum
 cbm                    DFT conduction band minimum relative to vacuum
-
 ind_gap_g0w0           G0W0 indirect band gap
 dir_gap_g0w0           G0W0 direct band gap
 vbm_g0w0               G0W0 valence band maximum
@@ -55,10 +57,8 @@ emass1_g0w0            G0W0 electron mass (direction 1 - smallest)
 emass2_g0w0            G0W0 electron mass (direction 2 - largest)
 hmass1_g0w0            G0W0 hole mass (direction 1 - smallest)
 hmass2_g0w0            G0W0 hole mass (direction 2 - largest)
-
 q2d_macro_df_slope     Slope of macroscopic 2D static dielectric function at
                        q=0
-
 =====================  =======================================================
 
 The dielectric building blocks of the materials, that can be used to build van
@@ -118,8 +118,8 @@ Which should return this result:
 The structure is set up with the structure parameter, that should be a list of
 speciems within the structure. In this case ``structure=['20MoS2']`` gives 20
 layers of MoS2. As an example a more complicated heterostructure of graphene,
-hBN and MoS2 can be set up with: ``structure=['3H-MoS2', '2BN','graphene', '2BN',
-'3H-MoS2']``, which will give one layer of graphene sandwiched between two
-layers of hBN and three layers of MoS2 on each side. The d parameter should be
-a list of the distance bewteen all neigboring layers, with a length equal to
-N-1, where N is the number of layers in the structure.
+hBN and MoS2 can be set up with: ``structure=['3H-MoS2', '2BN','graphene',
+'2BN', '3H-MoS2']``, which will give one layer of graphene sandwiched between
+two layers of hBN and three layers of MoS2 on each side. The d parameter
+should be a list of the distance bewteen all neigboring layers, with a length
+equal to N-1, where N is the number of layers in the structure.
