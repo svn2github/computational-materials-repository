@@ -31,6 +31,15 @@
 This database contains calculated structural and electronic properties of a
 range of 2D materials.
 
+Computational Methods
+---------------------
+
+The structures where first relaxed using the PBE xc-functional and a 18x18x1 k-point sampling until all forces on the atoms where below 0.01 eV/Å. The rows with xc='PBE' contains data from these calculations.
+
+For materials that where found to be semiconducting in the PBE calculations we furthermore did calculations using the LDA and GLLB-SC xc functionals and the lattice constants and atom positions found from the PBE relaxtion. For these calculations we used a 30x30x1 k-point sampling. For the GLLB-SC calculations we calculated the delta-scf and have added this contribution to the electronic band gaps. Data for these calculations are found in rows with xc='GLLBSC' and xc='LDA', respectively.
+
+Furthermore, we calculated the G0W0 quasiparticle energies using the wavefunctions and eigenvalues from the LDA calculations and a plane-wave cut-off energy of at least 150 eV. The quasiparticle energies where further extrapolated to infinite cut-off energy via the methods described in the paper. The LDA rows thus further have key-value pairs with the results from the G0W0 calculations.
+
 
 Key-value pairs
 ---------------
@@ -61,14 +70,14 @@ q2d_macro_df_slope     Slope of macroscopic 2D static dielectric function at
                        q=0
 =====================  =======================================================
 
+
+Dielectric building blocks
+---------------------------
+
 The dielectric building blocks of the materials, that can be used to build van
 der Waals heterostructures, is obtained from the file
 :download:`chi-data.tar.gz`. This contains a pickle file for each material
 with the data described below:
-
-
-Dielectric building blocks
----------------------------
 
 =====================  =======================================================
 quantity                  description
