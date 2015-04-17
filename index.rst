@@ -49,7 +49,7 @@ Projects
           :width: 189px
           :height: 124px
      - :ref:`c2dm`
-     - | Structural and electronic properties calculated with different DFT XC functionals and G0W0 of a large range of 2D materials. At the moment the database contains 216 transition-metal oxides and chalocogenides.
+       | Structural and electronic properties calculated with different DFT XC functionals and G0W0 of a large range of 2D materials. At the moment the database contains 216 transition-metal oxides and chalocogenides.
 
 .. toctree::
     :hidden:
