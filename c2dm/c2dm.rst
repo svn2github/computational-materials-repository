@@ -26,7 +26,7 @@
 
 
 * Download raw data: :download:`c2dm.db`, :download:`chi-data.tar.gz`
-* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dc2dm&toggle=name>`_
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dc2dm&toggle=age,user,calculator,energy,fmax,pbc,volume,charge,mass,name,xc,hform,ind_gap,dir_gap,ind_gap_g0w0,dir_gap_g0w0&sort=name>`_
 
 This database contains calculated structural and electronic properties of a
 range of 2D materials.
