@@ -3,9 +3,12 @@
 2D Materials
 ============
 
+This database contains calculated structural and electronic properties of a
+range of 2D materials. The database presently contains the results presented in the two papers:
+
 .. container:: article
 
-    Rasmussen, F., Thygesen, K. S.
+    (1) Rasmussen, F., Thygesen, K. S.
     
     `Computational 2D Materials Database: Electronic Structure of Transition
     Metal Dichalcogenides and Oxides`__
@@ -16,7 +19,7 @@
 
 .. container:: article
 
-    Andersen, K., Latini, S., Thygesen, K. S.
+    (2) Andersen, K., Latini, S., Thygesen, K. S.
     
     `The Dielectric Genome of van der Waals Heterostructures.`__
 
@@ -24,19 +27,17 @@
 
     __ http:/dx.doi.org/
 
+The data from (1) can be downloaded or browsed online while the data from (2) must be downloaded and used together with e.g. the Python script ``qeh.py`` as shown below.
 
 * Download raw data: :download:`c2dm.db`, :download:`chi-data.tar.gz`
-* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dc2dm&toggle=age,user,calculator,energy,fmax,pbc,volume,charge,mass,name,xc,hform,ind_gap,dir_gap,ind_gap_g0w0,dir_gap_g0w0&sort%3Dname>`_
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dc2dm&toggle=formula,age,user,calculator,energy,fmax,pbc,volume,charge,mass,name,xc,hform,ind_gap,dir_gap,ind_gap_g0w0,dir_gap_g0w0,formula&sort%3Dname>`_
 
-This database contains calculated structural and electronic properties of a
-range of 2D materials.
+Electronic structure of 2D materials
+------------------------------------
 
-Computational Methods
----------------------
+The structures were first relaxed using the PBE xc-functional and a 18x18x1 k-point sampling until all forces on the atoms where below 0.01 eV/Å. The rows with xc='PBE' contains data from these calculations.
 
-The structures where first relaxed using the PBE xc-functional and a 18x18x1 k-point sampling until all forces on the atoms where below 0.01 eV/Å. The rows with xc='PBE' contains data from these calculations.
-
-For materials that where found to be semiconducting in the PBE calculations we furthermore did calculations using the LDA and GLLB-SC xc functionals and the lattice constants and atom positions found from the PBE relaxtion. For these calculations we used a 30x30x1 k-point sampling. For the GLLB-SC calculations we calculated the delta-scf and have added this contribution to the electronic band gaps. Data for these calculations are found in rows with xc='GLLBSC' and xc='LDA', respectively.
+For materials that were found to be semiconducting in the PBE calculations we furthermore performed calculations using the LDA and GLLB-SC xc functionals and the lattice constants and atom positions found from the PBE calculation. For these calculations we used a 30x30x1 k-point sampling. For the GLLB-SC calculations we calculated the derivative discontinuity and have added this contribution to the electronic band gaps. Data for these calculations are found in rows with xc='GLLBSC' and xc='LDA', respectively.
 
 Furthermore, we calculated the G0W0 quasiparticle energies using the wavefunctions and eigenvalues from the LDA calculations and a plane-wave cut-off energy of at least 150 eV. The quasiparticle energies where further extrapolated to infinite cut-off energy via the methods described in the paper. The LDA rows thus further have key-value pairs with the results from the G0W0 calculations.
 
