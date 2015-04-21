@@ -71,6 +71,22 @@ q2d_macro_df_slope     Slope of macroscopic 2D static dielectric function at
                        q=0
 =====================  =======================================================
 
+Examples
+--------
+
+The following python script shows how to plot the positions of the VBM and CBM.
+
+.. literalinclude:: plot_band_alignment.py
+
+This produces the figure
+
+.. image:: band_alignment.png
+
+This script plots the LDA and G_0W_0 band structure of MoS2.
+
+.. literalinclude:: plot_band_structure.py
+
+.. image:: H-MoS2_band_structure.png
 
 Dielectric building blocks
 ---------------------------
