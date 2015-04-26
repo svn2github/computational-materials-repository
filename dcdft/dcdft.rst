@@ -53,6 +53,12 @@ above to write the formatted file using the data from the new database file.
 
 .. literalinclude:: extract.sh
 
+A typical example of analysing data could be a verification
+of the results stored http://molmod.ugent.be/DeltaCodesDFT against
+the database.
+
+.. literalinclude:: aims_tight.sh
+
 
 Running the calculations again
 ------------------------------
