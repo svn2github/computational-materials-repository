@@ -1,4 +1,4 @@
-1;2cProjects
+Projects
 ========
 
 .. list-table::
