@@ -54,7 +54,7 @@ Projects
    * - .. image:: tmfp06d.png
           :width: 189px
           :height: 124px
-     - | :ref:`dcdft`
+     - | :ref:`tmfp06d`
        | The performance of semilocal and hybrid density functionals in 3d transition-metal chemistry (reproducing published results).
 
 .. toctree::
