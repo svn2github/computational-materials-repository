@@ -8,7 +8,7 @@ database of bulk systems from http://molmod.ugent.be/DeltaCodesDFT.
 See the project page for details.
 
 * :download:`Download raw data for all codes <dcdft.db>`
-* :download:`Download raw GPAW data for PAW datasets version 0.9 <dcdft_gpaw_pw_setups09.db>`
+* :download:`Download raw GPAW data for PAW datasets version 0.9 <dcdft_gpaw_pw_paw09.db>`
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Ddcdft&
   toggle=user,calculator,name,x,xc,kptdensity,width,energy,volume>`_
 

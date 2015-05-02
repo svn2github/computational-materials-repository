@@ -16,21 +16,27 @@ collection = Collection()
 if len(sys.argv) == 2 and 'run.py' not in sys.argv:
     db = sys.argv[1]
 else:
-    db = 'dcdft_gpaw_pw_setups09.db'  # default db file
+    db = 'dcdft_gpaw_pw_paw09.db'  # default db file
 
 c = ase.db.connect(db)
 
-
 def analyse(c, collection):
+
     A = []
     for name in collection.names:
         ve = []  # volume, energy pairs
-        for d in c.select(name=name, sort='volume'):
-            ve.append((d.volume, d.energy))
+        for d in c.select(name=name):
+            try:
+                ve.append((abs(np.linalg.det(d.cell)), d.energy))
+            except AttributeError:
+                ve.append((np.nan, np.nan))
+
+        # sort according to volume
+        ves = sorted(ve, key=lambda x: x[0])
 
         # EOS
-        eos = EquationOfState([t[0] for t in ve],
-                              [t[1] for t in ve])
+        eos = EquationOfState([t[0] for t in ves],
+                              [t[1] for t in ves])
         try:
             v, e, B0, B1, R = eos.fit()
         except (ValueError, TypeError, LinAlgError):
