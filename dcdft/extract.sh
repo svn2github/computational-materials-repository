@@ -19,7 +19,7 @@ python extract.py dcdft_aims_tier2_nrel.db
 # espresso gbrv 1.2
 ase-db dcdft.db project=dcdft,calculator=espresso,potentials=gbrv,potentials_version=1.2 -i dcdft_espresso_gbrv_1.2.db
 python extract.py dcdft_espresso_gbrv_1.2.db
-# espresso gbrv 1.2
+# espresso gbrv 1.4
 ase-db dcdft.db project=dcdft,calculator=espresso,potentials=gbrv,potentials_version=1.4 -i dcdft_espresso_gbrv_1.4.db
 python extract.py dcdft_espresso_gbrv_1.4.db
 # espresso sg15_oncv
