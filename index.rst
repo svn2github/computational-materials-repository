@@ -51,6 +51,12 @@ Projects
      - | :ref:`c2dm`
        | Structural and electronic properties calculated with different DFT XC functionals and G0W0 of a large range of 2D materials. At the moment the database contains 216 transition-metal oxides and chalcocogenides.
 
+   * - .. image:: tmfp06d.png
+          :width: 189px
+          :height: 124px
+     - | :ref:`dcdft`
+       | The performance of semilocal and hybrid density functionals in 3d transition-metal chemistry (reproducing published results).
+
 .. toctree::
     :hidden:
 
@@ -62,6 +68,7 @@ Projects
     beef/beef
     dcdft/dcdft
     c2dm/c2dm
+    tmfp06d/tmfp06d
    
 
 What is CMR?
