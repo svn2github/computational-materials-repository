@@ -20,14 +20,15 @@ else:
 
 c = ase.db.connect(db)
 
+
 def analyse(c, collection):
 
     A = []
     for name in collection.names:
         ve = []  # volume, energy pairs
-        for d in c.select(name=name):
+        for row in c.select(name=name):
             try:
-                ve.append((abs(np.linalg.det(d.cell)), d.energy))
+                ve.append((abs(np.linalg.det(row.cell)), row.energy))
             except AttributeError:
                 ve.append((np.nan, np.nan))
 

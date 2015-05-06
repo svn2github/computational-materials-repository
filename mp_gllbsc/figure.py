@@ -12,15 +12,15 @@ con = ase.db.connect('mp_gllbsc.db')
 
 # Extract gaps data:
 data = []
-for dct in con.select('g0w0_gap', sort='gw_gap'):
-    data.append([dct.formula,
-                 dct.gw_gap,
-                 dct.gw0_gap,
-                 dct.g0w0_gap,
-                 dct.lda_gap,
-                 dct.gllbsc_gap,
-                 dct.gllbsc_gap - dct.gllbsc_disc,
-                 dct.hse06_gap])
+for row in con.select('g0w0_gap', sort='gw_gap'):
+    data.append([row.formula,
+                 row.gw_gap,
+                 row.gw0_gap,
+                 row.g0w0_gap,
+                 row.lda_gap,
+                 row.gllbsc_gap,
+                 row.gllbsc_gap - row.gllbsc_disc,
+                 row.hse06_gap])
 
 # Make a bar-chart:
 fig = plt.figure(figsize=(12, 8))

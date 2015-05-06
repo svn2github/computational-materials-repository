@@ -7,14 +7,14 @@ import ase.db
 con = ase.db.connect('mp_gllbsc.db')
 
 data = []
-for dct in con.select('g0w0_gap'):
-    ref = dct.gw_gap
-    data.append([dct.gw0_gap - ref,
-                 dct.g0w0_gap - ref,
-                 dct.lda_gap - ref,
-                 dct.gllbsc_gap - ref,
-                 dct.gllbsc_gap - dct.gllbsc_disc - ref,
-                 dct.hse06_gap - ref])
+for row in con.select('g0w0_gap'):
+    ref = row.gw_gap
+    data.append([row.gw0_gap - ref,
+                 row.g0w0_gap - ref,
+                 row.lda_gap - ref,
+                 row.gllbsc_gap - ref,
+                 row.gllbsc_gap - row.gllbsc_disc - ref,
+                 row.hse06_gap - ref])
 errors = np.array(data).T
 
 labels = ['`GW_0`', '`G_0W_0`', 'LDA', 'GLLB-SC - `\Delta_{xc}`',

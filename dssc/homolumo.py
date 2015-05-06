@@ -10,10 +10,10 @@ def plotter(M, A, c):
     EH = []
     EL = []
     EG = []
-    for n in c.select(M=M, A=A):  # select dyes with a specific M and A
-        EL.append(n.E_LUMO)
-        EH.append(n.E_HOMO)
-        EG.append(n.E_gap)
+    for row in c.select(M=M, A=A):  # select dyes with a specific M and A
+        EL.append(row.E_LUMO)
+        EH.append(row.E_HOMO)
+        EG.append(row.E_gap)
     # Set colors based on metal center:
     cl = {'Zn': 'red',
           'FZn': 'gold',

@@ -3,7 +3,7 @@ from gpaw import GPAW, PW, Mixer, FermiDirac
 
 cref = connect('beefgpaw.db')
 xc = 'PBE'
-names = [d.name for d in cref.select(xc=xc)]
+names = [row.name for row in cref.select(xc=xc)]
 
 c = connect('pbe.db')
 for name in names:

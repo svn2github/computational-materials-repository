@@ -4,7 +4,6 @@ import os
 import shutil
 import urllib
 
-import ase.db
 from ase.utils.sphinx import create_png_files
 
 url = 'https://cmr.fysik.dtu.dk/_downloads/'
@@ -21,7 +20,6 @@ downloads += [('.', [dir + '.png' for dir, names in downloads])]
 
 parser = optparse.OptionParser()
 parser.add_option('--copy', action='store_true')
-parser.add_option('--build-db')
 opts, args = parser.parse_args()
 if args:
     parser.error('sdfg')
@@ -40,15 +38,3 @@ for dir, names in downloads:
                 urllib.urlretrieve(url + name, path)
         
 create_png_files()
-
-if opts.build_db:
-    for dir, names in downloads:
-        for name in names:
-            if not name.endswith('db'):
-                continue
-            path = os.path.join(dir, name)
-            with ase.db.connect(opts.build_db) as big:
-                for d in ase.db.connect(path).select():
-                    big.write(d,
-                              data=d.get('data'),
-                              **d.get('key_value_pairs', {}))

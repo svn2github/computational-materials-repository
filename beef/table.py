@@ -4,14 +4,14 @@ import ase.db
 import numpy as np
 
 cref = ase.db.connect('beef.db')
-eref = np.array([d.ae for d in cref.select('natoms>1')])
+eref = np.array([row.ae for row in cref.select('natoms>1')])
 
 c = ase.db.connect('beefgpaw.db')
-xcs = [d.xc for d in c.select(name='H')]
+xcs = [row.xc for row in c.select(name='H')]
 
 data = []
 for xc in xcs:
-    energies = np.array([d.ae for d in c.select('natoms>1,xc=' + xc)])
+    energies = np.array([row.ae for row in c.select('natoms>1,xc=' + xc)])
     de = energies - eref
     data.append((xc, abs(de).mean(), de.min(), de.mean(), de.max()))
 data.sort(key=lambda row: row[1])

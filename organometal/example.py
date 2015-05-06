@@ -20,9 +20,9 @@ gaps = {'Cs': [], 'MA': [], 'FA': []}
 electr = {'Cs': [], 'MA': [], 'FA': []}
 
 # Select cubic symmetry containing Sn:
-for n in c.select('Sn>=1', symmetry='cubic'):
+for row in c.select('Sn>=1', symmetry='cubic'):
     x = 1.0
-    for Z in n.numbers:
+    for Z in row.numbers:
         symbol = chemical_symbols[Z]
         if symbol == 'I':
             x *= xi
@@ -32,9 +32,9 @@ for n in c.select('Sn>=1', symmetry='cubic'):
             x *= xcl
     x = x**(1 / 3.0)
 
-    name = n.name[:2]
+    name = row.name[:2]
     electr[name].append(x)
-    gaps[name].append(n.gllbsc_ind_gap)
+    gaps[name].append(row.gllbsc_ind_gap)
 
 for name, symbol in zip(['Cs', 'MA', 'FA'], 'os*'):
     plt.plot(electr[name], gaps[name], symbol, label=name)
