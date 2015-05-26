@@ -32,7 +32,19 @@ Projects
           :height: 124px
      - | :ref:`low_symmetry_perovskites`
        | We have used density functional theory (DFT) calculations to investigate 300 oxides and oxynitrides in the Ruddlesden–Popper phase of the layered perovskite structure.
+
+   * - .. image:: absorption_perovskites.png
+          :width: 189px
+          :height: 124px
+     - | :ref:`absorption_perovskites`
+       | We calculate the optical properties of a set of oxides, oxynitrides, and organometal halide cubic and layered perovskites with a bandgap in the visible part of the solar spectrum.
        
+   * - .. image:: funct_perovskites.png
+          :width: 189px
+          :height: 124px
+     - | :ref:`funct_perovskites`
+       | We investigate the band gaps and optical spectra of functional perovskites composed of layers of the two cubic perovskite semiconductors BaSnO3-BaTaO2N and LaAlO3-LaTiO2N.
+ 
    * - .. image:: beef.png
           :width: 189px
           :height: 124px
@@ -65,6 +77,8 @@ Projects
     mp_gllbsc/mp_gllbsc
     cubic_perovskites/cubic_perovskites
     low_symmetry_perovskites/low_symmetry_perovskites
+    absorption_perovskites/absorption_perovskites
+    funct_perovskites/funct_perovskites
     beef/beef
     dcdft/dcdft
     c2dm/c2dm

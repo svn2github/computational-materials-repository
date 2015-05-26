@@ -15,7 +15,11 @@ downloads = [('dssc', ['dssc.db']),
              ('cubic_perovskites', ['cubic_perovskites.db']),
              ('low_symmetry_perovskites', ['low_symmetry_perovskites.db']),
              ('c2dm', ['c2dm.db', 'chi-data.tar.gz']),
-             ('tmfp06d', ['tmfp06d.db'])]
+             ('tmfp06d', ['tmfp06d.db']),
+             ('absorption_perovskites', ['absorption_perovskites.db']),
+             ('funct_perovskites', ['funct_perovskites.db'])]
+
+# Add pictures for the front-page:
 downloads += [('.', [dir + '.png' for dir, names in downloads])]
 
 parser = optparse.OptionParser()
