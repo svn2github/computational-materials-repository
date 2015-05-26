@@ -13,7 +13,7 @@ Perovskite water-splitting
     
     Energy Environ. Sci. 5, 9034.
 
-    __ http:/dx.doi.org/
+    __ http:/dx.doi.org/10.1039/C2EE22341D
 
 .. container:: article
 
@@ -25,7 +25,18 @@ Perovskite water-splitting
     
     Energy Environ. Sci. 5, 5814.
 
-    __ http:/dx.doi.org/
+    __ http:/dx.doi.org/10.1039/C1EE02717D
+
+.. container:: article
+
+    Castelli, I. E., Thygesen, K. S., and Jacobsen, K. W.
+
+    `Calculated Pourbaix Diagrams of Cubic Perovskites for Water
+    Splitting: Stability Against Corrosion.`__
+
+    Topics in Catalysis 57, 265.
+
+    __ http:/dx.doi.org/10.1007/s11244-013-0181-4
 
 * :download:`Download raw data <cubic_perovskites.db>`
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dcubic_perovskites&
@@ -74,3 +85,20 @@ Here are the band gaps:
 .. image:: abo3.svg
 
 .. literalinclude:: abo3fig.py
+
+The stability of a material with respect to solid and dissolved phases
+can be evaluated using Pourbaix diagrams. Here how to generate the
+Pourbaix diagram for SrTiO3:
+
+.. literalinclude:: SrTiO3_pourbaix.py
+
+.. image:: SrTiO3_pourbaix.png
+
+Here how to plot the energy differences for all (oxides: 10,
+oxynitrides: 7, oxyfluorides: 3) the candidate material and the most
+stable experimental known solid and dissolved phases at pH = 7 and for
+a potential between -1 and 2 V:
+
+.. literalinclude:: candidates_pourbaix.py
+
+.. image:: WS_pourbaix.png
