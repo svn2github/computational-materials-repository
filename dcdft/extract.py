@@ -42,10 +42,11 @@ def analyse(c, collection):
             v, e, B0, B1, R = eos.fit()
         except (ValueError, TypeError, LinAlgError):
             (v, e, B0, B1, R) = (np.nan, np.nan, np.nan, np.nan, np.nan)
+        if not R: R = [np.nan]  # sometimes R is an empty array
         e = e / len(collection[name])
         v = v / len(collection[name])
         B0 = B0 / kJ * 1.0e24  # GPa
-        A.append((e, v, B0, B1, R))
+        A.append((e, v, B0, B1, R[0]))
     return np.array(A).T
 
 E, V, B0, B1, R = analyse(c, collection)
