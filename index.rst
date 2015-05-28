@@ -74,6 +74,12 @@ Projects
      - | :ref:`tmfp06d`
        | The performance of semilocal and hybrid density functionals in 3d transition-metal chemistry (reproducing published results).
 
+   * - .. image:: fcc111.png
+          :width: 189px
+          :height: 124px
+     - | :ref:`fcc111`
+       | Benchmark: adsoption energy of atomic oxygen and carbon on fcc111.
+
 .. toctree::
     :hidden:
 
@@ -89,6 +95,7 @@ Projects
     c2dm/c2dm
     vdwh/vdwh
     tmfp06d/tmfp06d
+    fcc111/fcc111
    
 
 What is CMR?

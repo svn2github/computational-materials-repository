@@ -1,0 +1,55 @@
+.. _fcc111:
+
+Benchmark: adsoption energy of atomic oxygen and carbon on fcc111
+=================================================================
+
+PBE adsorption energies of atomic oxygen and carbon on fcc111
+wrt. to fcc bulk oxygen and carbon.
+The adsorbed atom ontop, single-point SCF energies of fcc111 2x2, 4 layers,
+in the fixed structures optimized with FHI-AIMS (light basis),
+relativistic atomic_zora scalar.
+
+* :download:`Download raw data for all codes <fcc111.db>`
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dfcc111&
+  toggle=user,calculator,name,adsorbate,category,site>`_
+
+.. contents::
+    
+Key-value pairs
+---------------
+
+===========  =============================================================
+key              description
+===========  =============================================================
+adsorbate    One of: none, O, C
+category     One of: bulk, surface
+kptdensity   K-point density in point per Ang^-1
+name         Name of the element
+project      Name of the project: "fcc111"
+site         Adsorption site (if applicable)
+width        Electronic temperature
+===========  =============================================================
+
+Note that there are additional keys not explained above which are
+specific to the given calculator.
+
+
+Results
+-------
+
+First extract the data of the given code and
+insert it into a new database file. Then use the extract.py script
+to write the csv formatted file using the data from the new database file.
+
+.. literalinclude:: extract.sh
+
+The results can be plotted e.g. with:
+
+.. literalinclude:: plot.py
+
+
+Running the calculations again
+------------------------------
+
+Selected scripts used to obtain the results are available at
+https://svn.fysik.dtu.dk/projects/cmr2/trunk/fcc111

@@ -19,6 +19,7 @@ downloads = [('dssc', ['dssc.db']),
              ('tmfp06d', ['tmfp06d.db']),
              ('absorption_perovskites', ['absorption_perovskites.db']),
              ('funct_perovskites', ['funct_perovskites.db'])]
+             ('fcc111', ['fcc111.db'])]
 
 # Add pictures for the front-page:
 downloads += [('.', [dir + '.png' for dir, names in downloads])]
