@@ -11,7 +11,7 @@ relativistic atomic_zora scalar.
 
 * :download:`Download raw data for all codes <fcc111.db>`
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dfcc111&
-  toggle=user,calculator,name,adsorbate,category,site>`_
+  toggle=user,calculator,name,category,adsorbate,site>`_
 
 .. contents::
     
