@@ -63,6 +63,11 @@ Projects
      - | :ref:`c2dm`
        | Structural and electronic properties calculated with different DFT XC functionals and G0W0 of a large range of 2D materials. At the moment the database contains 216 transition-metal oxides and chalcocogenides.
 
+   * - .. image:: vdwh.png
+          :width: 230px
+     - | :ref:`vdwh`
+       | The dielectric building blocks of 51 transition metal dichalcogenides, hexagonal boron nitride, and graphene is available from this database. The results are used to calculate the dielectric function of van der Waals heterostructures, using the Quantum Electrostratic Heterostructure (QEH) model.
+
    * - .. image:: tmfp06d.png
           :width: 189px
           :height: 124px
@@ -82,6 +87,7 @@ Projects
     beef/beef
     dcdft/dcdft
     c2dm/c2dm
+    vdwh/vdwh
     tmfp06d/tmfp06d
    
 
