@@ -22,7 +22,7 @@ Key-value pairs
 key              description
 ===========  =============================================================
 adsorbate    One of: none, O, C
-category     One of: bulk, surface
+category     One of: fcc, fcc111
 kptdensity   K-point density in point per Ang^-1
 name         Name of the element
 project      Name of the project: "fcc111"
