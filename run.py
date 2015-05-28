@@ -18,7 +18,7 @@ downloads = [('dssc', ['dssc.db']),
              ('vdwh', ['chi-data.tar.gz']),
              ('tmfp06d', ['tmfp06d.db']),
              ('absorption_perovskites', ['absorption_perovskites.db']),
-             ('funct_perovskites', ['funct_perovskites.db'])]
+             ('funct_perovskites', ['funct_perovskites.db']),
              ('fcc111', ['fcc111.db'])]
 
 # Add pictures for the front-page:
