@@ -293,8 +293,7 @@ class Heterostructure:
         chi_m_iqw = self.chi_monopole
         chi_d_iqw = self.chi_dipole
         
-        if self.kernel_qij is None:
-            self.kernel_qij = self.get_Coulomb_Kernel()
+        self.kernel_qij = self.get_Coulomb_Kernel()
         chi_qwij = np.zeros((len(self.q_abs), len(self.frequencies),
                                  self.dim, self.dim), dtype=complex)
 
