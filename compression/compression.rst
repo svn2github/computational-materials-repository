@@ -45,7 +45,7 @@ Use the https://svn.fysik.dtu.dk/projects/cmr2/trunk/compression/eliminate.sh sc
 This is due to the fact that it is difficult to obtain reliable
 results from all-electron codes.
  
-The results can be plotted e.g. with https://svn.fysik.dtu.dk/projects/cmr2/trunk/compression/plot.pt
+The results can be plotted e.g. with https://svn.fysik.dtu.dk/projects/cmr2/trunk/compression/plot.py
 
 
 Running the calculations again
