@@ -1,7 +1,7 @@
 .. _tmfp06d:
 
-The performance of semilocal and hybrid density functionals in 3d transition-metal chemistry 
-============================================================================================
+Benchmark: the performance of semilocal and hybrid density functionals in 3d transition-metal chemistry 
+=======================================================================================================
 
 Reproducing selected results from
 https://dx.doi.org/10.1063/1.2162161 using different codes.

@@ -55,7 +55,7 @@ Projects
           :width: 189px
           :height: 124px
      - | :ref:`dcdft`
-       | Codes precision measured using the database of bulk systems from http://molmod.ugent.be/DeltaCodesDFT.
+       | Benchmark: codes precision measured using the database of bulk systems from http://molmod.ugent.be/DeltaCodesDFT.
        
    * - .. image:: c2dm.png
           :width: 189px
@@ -72,7 +72,7 @@ Projects
           :width: 189px
           :height: 124px
      - | :ref:`tmfp06d`
-       | The performance of semilocal and hybrid density functionals in 3d transition-metal chemistry (reproducing published results).
+       | Benchmark: the performance of semilocal and hybrid density functionals in 3d transition-metal chemistry (reproducing published results).
 
    * - .. image:: fcc111.png
           :width: 189px

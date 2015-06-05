@@ -1,7 +1,7 @@
 .. _dcdft:
 
-DeltaCodesDFT
-=============
+Banchmark: DeltaCodesDFT
+========================
 
 Codes precision measured using the
 database of bulk systems from http://molmod.ugent.be/DeltaCodesDFT.
