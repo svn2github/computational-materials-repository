@@ -38,18 +38,16 @@ to write the csv formatted file using the data from the new database file.
 .. literalinclude:: extract.sh
 
 The systems in this work (many of TM atoms, and TM diatomics) should
-not be really treated with GGA DFT for various problems (see for example
+not be really treated with GGA DFT due to various reasons (see for example
 http://dx.doi.org/10.1063/1.2723118 or https://dx.doi.org/10.1021/ct2006852).
-These problems often translate into convergence problems in various DFT codes
+These problems often translate into convergence problems in DFT codes
 or large scatter of the obtained results.
 The third step consists of eliminating all
 systems that show large scatter of results from the set.
  
 .. literalinclude:: eliminate.sh
 
-The results can be plotted e.g. with:
-
-.. literalinclude:: plot.py
+The results can be plotted e.g. with https://svn.fysik.dtu.dk/projects/cmr2/trunk/tmfp06d/plot.py
 
 
 Running the calculations again

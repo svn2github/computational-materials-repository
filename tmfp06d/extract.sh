@@ -17,7 +17,7 @@ python extract.py aims aims_tight.nrel.PBE.db
 ase-db tmfp06d.db project=tmfp06d,xc=PBE,calculator=aims,basis=tier2,relativistic=0 -i aims_tier2.nrel.PBE.db
 python extract.py aims aims_tier2.nrel.PBE.db
 # gpaw paw 09
-ase-db tmfp06d.db project=tmfp06d,xc=PBE,calculator=gpaw,potentials_version=09,relativistic=0 -i gpaw_paw09.nrel.PBE.db
+ase-db tmfp06d.db project=tmfp06d,xc=PBE,calculator=gpaw,potentials_version=0.9,relativistic=0 -i gpaw_paw09.nrel.PBE.db
 python extract.py gpaw gpaw_paw09.nrel.PBE.db
 
 # aims tight basis relativistic atomic_zora scalar
@@ -39,5 +39,5 @@ python extract.py espresso espresso_gbrv_1.4.srel.PBE.db
 ase-db tmfp06d.db project=tmfp06d,xc=PBE,calculator=espresso,potentials=sg15_oncv,relativistic=1 -i espresso_sg15_oncv.srel.PBE.db
 python extract.py espresso espresso_sg15_oncv.srel.PBE.db
 # gpaw paw 09
-ase-db tmfp06d.db project=tmfp06d,xc=PBE,calculator=gpaw,potentials_version=09,relativistic=1 -i gpaw_paw09.srel.PBE.db
+ase-db tmfp06d.db project=tmfp06d,xc=PBE,calculator=gpaw,potentials_version=0.9,relativistic=1 -i gpaw_paw09.srel.PBE.db
 python extract.py gpaw gpaw_paw09.srel.PBE.db
