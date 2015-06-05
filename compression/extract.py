@@ -42,6 +42,7 @@ def analyse(c, names):
         except (ValueError, TypeError, LinAlgError):
             (v, e0, B0, B1, R) = (np.nan, np.nan, np.nan, np.nan, [np.nan])
         if not R: R = [np.nan]  # sometimes R is an empty array
+        if not isinstance(R, list): R = [R]  # sometimes R is not a list
         e0 = e0
         v = v
         B0 = B0 / kJ * 1.0e24  # GPa
