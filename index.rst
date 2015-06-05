@@ -80,6 +80,12 @@ Projects
      - | :ref:`fcc111`
        | Benchmark: adsoption energy of atomic oxygen and carbon on fcc111.
 
+   * - .. image:: compression.png
+          :width: 189px
+          :height: 124px
+     - | :ref:`compression`
+       | Benchmark: compression energies of bulk fcc and rocksalt.
+
 .. toctree::
     :hidden:
 
@@ -96,6 +102,7 @@ Projects
     vdwh/vdwh
     tmfp06d/tmfp06d
     fcc111/fcc111
+    compression/compression
    
 
 What is CMR?
