@@ -20,7 +20,7 @@ range of 2D materials. The database contains the results presented in the follow
 The data can be downloaded or browsed online as shown below.
 
 * Download raw data: :download:`c2dm.db`
-* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dc2dm&toggle=formula,age,user,calculator,energy,fmax,pbc,volume,charge,mass,name,xc,hform,ind_gap,dir_gap,ind_gap_g0w0,dir_gap_g0w0,formula&sort%3Dname>`_
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dc2dm&toggle=formula,age,user,calculator,energy,fmax,pbc,volume,charge,mass,magmom,name,xc,hform,a,ind_gap,dir_gap,ind_gap_g0w0,dir_gap_g0w0,magmom,formula&sort%3Dname>`_
 
 Electronic structure of 2D materials
 ------------------------------------
