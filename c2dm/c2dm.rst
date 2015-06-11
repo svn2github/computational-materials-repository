@@ -10,12 +10,11 @@ range of 2D materials. The database contains the results presented in the follow
 
     Rasmussen, F., Thygesen, K. S.
     
-    `Computational 2D Materials Database: Electronic Structure of Transition
-    Metal Dichalcogenides and Oxides`__
+    `Computational 2D Materials Database: Electronic Structure of Transition-Metal Dichalcogenides and Oxides`__
 
-    (Submitted)
+    J. Phys. Chem. C, 2015, 119 (23), pp 13169–13183, April 30, 2015
 
-    __ http:/dx.doi.org/
+    __ http://pubs.acs.org/doi/abs/10.1021/acs.jpcc.5b02950
 
 The data can be downloaded or browsed online as shown below.
 
