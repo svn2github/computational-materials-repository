@@ -9,11 +9,11 @@ This database contains the dielectric building blocks of 51 transition metal dic
 
     Andersen, K., Latini, S., Thygesen, K. S.
     
-    `The Dielectric Genome of van der Waals Heterostructures.`__
+    `Dielectric Genome of van der Waals Heterostructures.`__
 
-    (Submitted)
-
-    __ http:/dx.doi.org/
+    Nano Letters (2015)
+    
+    __ http:/dx.doi.org/10.1021/acs.nanolett.5b01251
 
 The data can be downloaded and used together with e.g. the Python script ``qeh.py`` as shown below. The dielectric building blocks are obtained from the file:
 
