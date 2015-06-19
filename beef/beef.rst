@@ -27,7 +27,8 @@ Bayesian error estimation functionals
 Key-value pairs
 ---------------
 
-molecules.db:
+molecules.db
+............
     
 =======  ===========================
 key      description
@@ -38,7 +39,9 @@ xc       XC-functional
 project  Name of the project: "beef"
 =======  ===========================
 
-solids.db:
+
+solids.db
+.........
     
 =======  ===========================
 key      description
@@ -50,7 +53,11 @@ xc       XC-functional
 project  Name of the project: "beef"
 =======  ===========================
 
-surfaces.db:
+Extra data for each row: ``volumes`` and ``energies``.
+
+
+surfaces.db
+...........
     
 =======  ===========================
 key      description
