@@ -1,17 +1,17 @@
 # creates: output.txt, hist.svg
 from __future__ import print_function
 import ase.db
-from ase.dft.bee import BEEFEnsemble
+from ase.dft.bee import ensemble
 
-c = ase.db.connect('beefgpaw.db')
+con = ase.db.connect('molecules.db')
 
-def ensemble(name):
-    d = c.get(formula=name, xc='mBEEF')
-    bee = BEEFEnsemble(e=d.energy, contribs=d.data.contributions, xc='mBEEF')
-    e = bee.get_ensemble_energies()
-    return e
-    
-ae = 2 * ensemble('N') - ensemble('N2')
+
+row1 = con.get(formula='N', xc='mBEEF')
+e1 = ensemble(row1.energy, row1.data.contributions, 'mBEEF')
+row2 = con.get(formula='N2', xc='mBEEF')
+e2 = ensemble(row2.energy, row2.data.contributions, 'mBEEF')
+ae = 2 * e1 - e2
+
 print('AE = {0:.2f} +- {1:.2f} eV'.format(ae.mean(), ae.std()))
 # One more time to output.txt:
 print('AE = {0:.2f} +- {1:.2f} eV'.format(ae.mean(), ae.std()),

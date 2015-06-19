@@ -16,10 +16,10 @@ Bayesian error estimation functionals
     __ http://dx.doi.org/10.1063/1.4870397
     
 
-* :download:`Download raw reference data <beef.db>`
-* :download:`Download raw GPAW data <beefgpaw.db>`
+* Download raw reference data: :download:`molecules.db`, :download:`solids.db`
+  and surfaces.db
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dbeef&
-  toggle=user,mass,xc,db,ae,ce>`_
+  toggle=user,mass,xc,ae,ce,bm,be>`_
 
 .. contents::
     
@@ -27,27 +27,79 @@ Bayesian error estimation functionals
 Key-value pairs
 ---------------
 
-=======  ===========================================================
+molecules.db:
+    
+=======  ===========================
 key      description
-=======  ===========================================================
-name     Name of system (molecule, atom, bulk crystal, clean surface
-         or surface with adsorbate)
+=======  ===========================
+name     Name of atom or molecule
 ae       Atomization energy
-ce       Chemisorption energy
 xc       XC-functional
-db       Name of database: "G3/99", "AE6", ...
 project  Name of the project: "beef"
-=======  ===========================================================
+=======  ===========================
+
+solids.db:
+    
+=======  ===========================
+key      description
+=======  ===========================
+name     Name of atom or solid
+ce       Cohesive energy
+bm       Bulk modulus
+xc       XC-functional
+project  Name of the project: "beef"
+=======  ===========================
+
+surfaces.db:
+    
+=======  ===========================
+key      description
+=======  ===========================
+name     Name of atom or solid
+be       Binding energy
+xc       XC-functional
+project  Name of the project: "beef"
+=======  ===========================
 
 
-Functionals
------------
+Performance of functionals
+--------------------------
+
+Molecules
+.........
 
 .. literalinclude:: table.py
     :start-after: future
 
+Errors in atomization energy (eV):
+    
 .. csv-table::
     :file: table.csv
+    :header-rows: 1
+
+
+Solids
+......
+
+.. literalinclude:: solidstable.py
+    :start-after: future
+
+Errors in lattice parameters (%):
+    
+.. csv-table::
+    :file: lp.csv
+    :header-rows: 1
+
+Errors in cohesive energies (eV):
+    
+.. csv-table::
+    :file: ce.csv
+    :header-rows: 1
+
+Errors in bulk moduli (GPa):
+    
+.. csv-table::
+    :file: bm.csv
     :header-rows: 1
 
     
@@ -70,9 +122,17 @@ The `8\times 8` mBEEF energy contributions are calculated from
 self-consistent mBEEF calculations at mBEEF geometries.
 
 
+Reaction energies and error bars
+--------------------------------
+
+.. image:: reactions.svg
+
+.. literalinclude:: reactions.py
+
+
 Running the calculations again
 ------------------------------
 
-This example show how to run all the G3/99 systems with PBE:
+This example show how to run all the molecule systems with PBE:
     
 .. literalinclude:: pbe.py

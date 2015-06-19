@@ -9,7 +9,7 @@ from ase.utils.sphinx import create_png_files
 url = 'https://cmr.fysik.dtu.dk/_downloads/'
 downloads = [('dssc', ['dssc.db']),
              ('dcdft', ['dcdft.db', 'dcdft_gpaw_pw_paw09.db']),
-             ('beef', ['beef.db', 'beefgpaw.db']),
+             ('beef', ['molecules.db', 'solids.db']),
              ('mp_gllbsc', ['mp_gllbsc.db']),
              ('organometal', ['organometal.db']),
              ('cubic_perovskites', ['cubic_perovskites.db']),

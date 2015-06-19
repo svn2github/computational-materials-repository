@@ -1,20 +1,24 @@
 # creates: table.csv
 from __future__ import print_function
+import operator
 import ase.db
 import numpy as np
 
-cref = ase.db.connect('beef.db')
-eref = np.array([row.ae for row in cref.select('natoms>1')])
+con = ase.db.connect('molecules.db')
+eref = [row.ae for row in
+        con.select(calculator='exp', sort='name')]
+eref = np.array(eref)
 
-c = ase.db.connect('beefgpaw.db')
-xcs = [row.xc for row in c.select(name='H')]
+xcs = [row.xc for row in con.select(name='H', calculator='gpaw')]
 
 data = []
 for xc in xcs:
-    energies = np.array([row.ae for row in c.select('natoms>1,xc=' + xc)])
+    energies = [row.ae for row in
+                con.select('natoms>1', xc=xc, sort='name')]
     de = energies - eref
     data.append((xc, abs(de).mean(), de.min(), de.mean(), de.max()))
-data.sort(key=lambda row: row[1])
+    
+data.sort(key=operator.itemgetter(1))
 
 fd = open('table.csv', 'w')
 print('# XC,    MEANABS,     MIN,    MEAN,     MAX', file=fd)

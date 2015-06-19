@@ -1,7 +1,7 @@
 from ase.db import connect
 from gpaw import GPAW, PW, Mixer, FermiDirac
 
-cref = connect('beefgpaw.db')
+cref = connect('molecules.db')
 xc = 'PBE'
 names = [row.name for row in cref.select(xc=xc)]
 
