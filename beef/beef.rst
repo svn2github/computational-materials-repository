@@ -76,7 +76,6 @@ Molecules
 .........
 
 .. literalinclude:: table.py
-    :start-after: future
 
 Errors in atomization energy (eV):
     
@@ -89,7 +88,6 @@ Solids
 ......
 
 .. literalinclude:: solidstable.py
-    :start-after: future
 
 Errors in lattice parameters (%):
     
