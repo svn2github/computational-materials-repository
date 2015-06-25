@@ -17,7 +17,7 @@ if [ -n "$changes" ]
 then
     cd cmr
     # Run Python scripts:
-    PYTHONPATH=../ase:$PYTHONPATH python run.py --copy
+    PYTHONPATH=../ase:$PYTHONPATH python run.py
 
     # Build html:
     rm -rf build/*/*

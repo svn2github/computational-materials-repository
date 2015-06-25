@@ -1,6 +1,4 @@
-extensions = [
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.mathjax']
+extensions = ['run', 'sphinx.ext.intersphinx', 'sphinx.ext.mathjax']
 source_suffix = '.rst'
 master_doc = 'index'
 project = u'COMPUTATIONAL MATERIALS REPOSITORY'

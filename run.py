@@ -1,10 +1,10 @@
 from __future__ import print_function
-import optparse
 import os
 import shutil
 import urllib
 
-from ase.utils.sphinx import create_png_files
+from ase.utils.sphinx import create_png_files, clean
+
 
 url = 'https://cmr.fysik.dtu.dk/_downloads/'
 downloads = [('dssc', ['dssc.db']),
@@ -25,23 +25,31 @@ downloads = [('dssc', ['dssc.db']),
 # Add pictures for the front-page:
 downloads += [('.', [dir + '.png' for dir, names in downloads])]
 
-parser = optparse.OptionParser()
-parser.add_option('--copy', action='store_true')
-opts, args = parser.parse_args()
-if args:
-    parser.error('sdfg')
-    
-for dir, names in downloads:
-    for name in names:
-        path = os.path.join(dir, name)
-        if not os.path.isfile(path):
-            if opts.copy:
-                print('Copying', path)
-                shutil.copy(os.path.join('..', 'downloads', name), path)
-            else:
+
+def download():
+    """Download the big data files and front-page images for each project."""
+    for dir, names in downloads:
+        for name in names:
+            path = os.path.join(dir, name)
+            if not os.path.isfile(path):
                 print('Downloading', path)
                 if dir == '.':
                     name = '../_images/' + name
                 urllib.urlretrieve(url + name, path)
-        
-create_png_files()
+
+                
+def setup(app):
+    """Sphinx entry point."""
+    download()
+    create_png_files()
+
+
+if __name__ == '__main__':
+    # Run this on the web-server only:
+    clean()
+    for dir, names in downloads:
+        for name in names:
+            path = os.path.join(dir, name)
+            if not os.path.isfile(path):
+                print('Copying', path)
+                shutil.copy(os.path.join('..', 'downloads', name), path)

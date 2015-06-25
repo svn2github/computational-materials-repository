@@ -17,14 +17,12 @@ Check out the source::
 Make sure you have up to date :ref:`ASE <ase:download_and_install>` and
 Sphinx_ installations.  Then do::
     
-    $ python run.py
+    $ make
     
 This will download the database files and run Python scripts to create images
-and other stuff needed for the webpages (.svg and .csv files).
-
-Build the html-files::
-    
-    $ make
+and other stuff needed for the webpages (.svg and .csv files).  This will take
+a couple of minutes the first time you do this.  After that, Sphinx_ will
+build the html-files.
 
 .. _Sphinx: http://sphinx.pocoo.org/
 
