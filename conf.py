@@ -1,4 +1,8 @@
-extensions = ['run', 'sphinx.ext.intersphinx', 'sphinx.ext.mathjax']
+import sys
+sys.path[:0] = ['.']
+extensions = ['run_python_scripts',
+              'sphinx.ext.intersphinx',
+              'sphinx.ext.mathjax']
 source_suffix = '.rst'
 master_doc = 'index'
 project = u'COMPUTATIONAL MATERIALS REPOSITORY'
