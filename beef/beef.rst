@@ -43,15 +43,16 @@ project  Name of the project: "beef"
 solids.db
 .........
     
-=======  ===========================
-key      description
-=======  ===========================
-name     Name of atom or solid
-ce       Cohesive energy
-bm       Bulk modulus
-xc       XC-functional
-project  Name of the project: "beef"
-=======  ===========================
+=========  ===========================
+key        description
+=========  ===========================
+name       Name of atom or solid
+structure  Crystal structure
+ce         Cohesive energy
+bm         Bulk modulus
+xc         XC-functional
+project    Name of the project: "beef"
+=========  ===========================
 
 Extra data for each row: ``volumes`` and ``energies``.
 
@@ -59,14 +60,18 @@ Extra data for each row: ``volumes`` and ``energies``.
 surfaces.db
 ...........
     
-=======  ===========================
-key      description
-=======  ===========================
-name     Name of atom or solid
-be       Binding energy
-xc       XC-functional
-project  Name of the project: "beef"
-=======  ===========================
+XXX suggested keys:
+    
+=========  ===========================
+key        description
+=========  ===========================
+name       Name of atom or solid
+substrate  ...
+adsorbate  ...
+be         Binding energy
+xc         XC-functional
+project    Name of the project: "beef"
+=========  ===========================
 
 
 Performance of functionals
