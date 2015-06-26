@@ -133,3 +133,9 @@ Other links
 * `ASE-DB <https://wiki.fysik.dtu.dk/ase/ase/db/db.html>`_
 * :ref:`genindex`
 * :ref:`search`
+
+
+.. toctree::
+    :maxdepth: 1
+    
+    server
