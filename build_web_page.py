@@ -1,3 +1,4 @@
+"""Script for server that builds the CMR web-page continuously."""
 from __future__ import print_function
 import optparse
 import os
