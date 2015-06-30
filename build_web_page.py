@@ -23,7 +23,7 @@ def build():
             if not os.path.isfile(path):
                 print('Copying', path)
                 shutil.copy(os.path.join('..', 'downloads', name), path)
-    # os.makedirs('build/html')  # Sphinx-1.1.3 needs this (1.2.2 is OK)
+    os.makedirs('build/html')  # Sphinx-1.1.3 needs this (1.2.2 is OK)
     subprocess.check_call('PYTHONPATH={0}/ase make html'.format(home),
                           shell=True)
            
