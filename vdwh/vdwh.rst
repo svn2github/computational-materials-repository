@@ -3,7 +3,11 @@
 Van der Waals heterostructures
 ==============================
 
-This database contains the dielectric building blocks of 51 transition metal dichalcogenides and oxides, hexagonal boron nitride, and graphene at ten different doping levels. These results are used to calculate the dielectric function of van der Waals heterostructures that is build as combinations of these materials.  The following article has been submitted for publication:
+This database contains the dielectric building blocks of 51 transition metal
+dichalcogenides and oxides, hexagonal boron nitride, and graphene at ten
+different doping levels. These results are used to calculate the dielectric
+function of van der Waals heterostructures that is build as combinations of
+these materials.  The following article has been submitted for publication:
 
 .. container:: article
 
@@ -15,20 +19,32 @@ This database contains the dielectric building blocks of 51 transition metal dic
     
     __ http:/dx.doi.org/10.1021/acs.nanolett.5b01251
 
-The data can be downloaded and used together with e.g. the Python script ``qeh.py`` as shown below. The dielectric building blocks are obtained from the file:
+The data can be downloaded and used together with e.g. the Python script
+``qeh.py`` as shown below. The dielectric building blocks are obtained from
+the file:
 
 * Download raw data :download:`chi-data.tar.gz`
 
-The electronic band gap and band edge positions of the trantision metal dichalcogenides and oxides are available from the 2D materials database :ref:`c2dm`, where both metallic and semiconducting materials have been studied. These results can be browsed online with the link:
+The electronic band gap and band edge positions of the trantision metal
+dichalcogenides and oxides are available from the 2D materials database
+:ref:`c2dm`, where both metallic and semiconducting materials have been
+studied. These results can be browsed online with the link:
 
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dc2dm&toggle=formula,age,user,calculator,energy,fmax,pbc,volume,charge,mass,name,xc,hform,ind_gap,dir_gap,ind_gap_g0w0,dir_gap_g0w0,formula&sort%3Dname>`_
 
-The dielelectric building blocks have presently only been calculated for the 51 semiconducing materials found to be stable in the study above.
+The dielelectric building blocks have presently only been calculated for the
+51 semiconducing materials found to be stable in the study above.
+
 
 Dielectric building blocks
 ---------------------------
 
-As explained above, the dielectric building blocks of the materials are obtained from the file :download:`chi-data.tar.gz`. This contains a pickle file for each material called: *<name>-chi.pckl*, where the name consists of the phase (*'H'* for 2H and *'T'* for 1T) followed by the chemical formula, such that the file for 2H-MoS2 is called: *H-MoS2-chi.pckl*. The files contain the data described in the table below:
+As explained above, the dielectric building blocks of the materials are
+obtained from the file :download:`chi-data.tar.gz`. This contains a pickle
+file for each material called: *<name>-chi.pckl*, where the name consists of
+the phase (*'H'* for 2H and *'T'* for 1T) followed by the chemical formula,
+such that the file for 2H-MoS2 is called: *H-MoS2-chi.pckl*. The files contain
+the data described in the table below:
 
 =====================  =======================================================
 quantity                  description
@@ -56,8 +72,10 @@ The quantum electrostatic heterostructure (QEH) model
 
 The dielectric function of van der waals heterostructures and associated
 properties can be calculated with the python module in the script, *qeh.py*,
-that can be downloaded from here: :download:`qeh.py`, and is also available
-trough GPAW. 
+that can be downloaded from here: qeh.py_, and is also available
+trough GPAW.
+
+.. _qeh.py: https://trac.fysik.dtu.dk/projects/gpaw/browser/trunk/gpaw/response/qeh.py?format=txt
 
 As an example the macroscopic dielectric function of multilayer MoS2 can be
 obtained. First we extract the data for MoS2 from the database::

@@ -3,6 +3,8 @@ import os
 import sys
 sys.path.insert(0, '.')
 os.system('tar xf chi-data.tar.gz; mv chi-data/H-MoS2-chi.pckl .')
+os.system('wget https://trac.fysik.dtu.dk/projects/gpaw/browser/trunk'
+          '/gpaw/response/qeh.py?format=txt -O qeh.py')
 
 # Calculate static dielectric function for multilayer MoS2 for 1 to 20 layers:
 from qeh import Heterostructure
