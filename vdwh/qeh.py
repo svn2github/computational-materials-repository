@@ -384,7 +384,7 @@ class Heterostructure:
             epsinv_M = 1. / N * np.dot(np.array(potential) * layer_weight,
                                        np.dot(epsinv_ij,
                                               np.array(constant_perturbation)))
-            epsM_q.append(1. / epsinv_M)
+            epsM_q.append(1. / epsinv_M.real)
         return self.q_abs / Bohr, epsM_q
 
     def get_response(self, iw=0, dipole=False):
