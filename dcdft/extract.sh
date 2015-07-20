@@ -25,6 +25,9 @@ python extract.py dcdft_espresso_gbrv_1.4.db
 # espresso sg15_oncv
 ase-db dcdft.db project=dcdft,calculator=espresso,potentials=sg15_oncv -i dcdft_espresso_sg15_oncv.db
 python extract.py dcdft_espresso_sg15_oncv.db
+# espresso sssp_accuracy
+ase-db dcdft.db project=dcdft,calculator=espresso,potentials=sssp_accuracy -i dcdft_espresso_sssp_accuracy.db
+python extract.py dcdft_espresso_sssp_accuracy.db
 # abinit gbrv
 ase-db dcdft.db project=dcdft,calculator=abinit,potentials=gbrv -i dcdft_abinit_gbrv.db
 python extract.py dcdft_abinit_gbrv.db
