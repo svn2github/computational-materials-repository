@@ -13,7 +13,7 @@ Projects
           :width: 189px
           :height: 124px
      - | :ref:`dssc`
-       | We present a computational screening study of more than 5000 porphyrin-based dyes obtained by modifying the porphyrin backbone (metal center and axial ligands), substituting hydrogen by fluorine, and adding different side and anchoring groups.
+       | We present a computational screening study of more than 12,000 porphyrin-based dyes obtained by modifying the porphyrin backbone (metal center and axial ligands), substituting hydrogen by fluorine, and adding different side and anchoring groups.
        
    * - .. image:: mp_gllbsc.png
           :width: 189px

@@ -2,6 +2,7 @@
 
 Porphyrin based dyes
 ===================================
+The first 5145 porphyrins are described in:
 
 .. container:: article
   
@@ -21,7 +22,29 @@ Porphyrin based dyes
     ab initio calculations <http://dx.doi.org/10.1039/C4CP01289E>`_
 
     Phys. Chem. Chem. Phys., 2014, 16, 16246-16254
-    
+   
+Examples of using the database can be found in:
+
+.. container:: article
+  
+    Kristian B. Ørnsø, Juan M. García-Lastra, Gema De La Torre,
+    F. J. Himpsel, Angel Rubio and Kristian S. Thygesen
+
+    `Design of two-photon molecular tandem architectures for solar
+    cells by ab initio theory <http://dx.doi.org/10.1039/C4SC03835E>`_
+
+    Chem. Sci., 2015, 6, 3018-3025
+
+.. container:: article
+  
+    Kristian B. Ørnsø, Elvar Ö. Jónsson, Karsten W. Jacobsen and
+    Kristian S. Thygesen
+
+    `Importance of the Reorganization Energy Barrier in Computational
+    Design of Porphyrin-Based Solar Cells with Cobalt-Based Redox
+    Mediators <http://dx.doi.org/10.1021/JP512627E>`_
+
+    J. Phys. Chem. C, 2015, 119, 12792-12800
 
 .. contents::
         
@@ -35,7 +58,7 @@ Key-value pairs
 
 .. figure:: mol.png
     
-   Example of dye with: M=Zn, A=EthynPhA, R1=H, R2=H, R3=H
+   Example of dye with: M=ZnP, A=EthynPhA, R1=Ph, R2=Ph, R3=Ph
 
 ============ ============================================================
 key          description
@@ -66,9 +89,70 @@ Example of how to use the database to create Figure S1 in the 2014 paper
 -------------------------------------------------------------------------
 
 .. include:: homolumo.py
-   :start-after: creates
    :code: python
 
 .. image:: homolumo.svg
    :width: 600
 
+List of structure related keywords
+----------------------------------
+
++---------------+---------------------+---------------------------+
+|Metal centers  | Side groups         |  Anchor groups            |
++===============+=====================+===========================+
+| ZnP           | Ph                  | EthynPhA                  |
++---------------+---------------------+---------------------------+
+| FZnP          | FPh                 | 2CyanoPropenA             |
++---------------+---------------------+---------------------------+
+| H2P           | DMP                 | 2CarboxyPropenA           |
++---------------+---------------------+---------------------------+
+| FH2P          | TPA                 | EthenThPCyanoAcryl        |
++---------------+---------------------+---------------------------+
+| TiOP          | MOTPA               | EthynBTDPhA               |
++---------------+---------------------+---------------------------+
+| FTiOP         | TMP                 | EthynDPhEPhA              |
++---------------+---------------------+---------------------------+
+| TiO2RP        | DTA                 | EthynPhEPhA               |
++---------------+---------------------+---------------------------+
+| FTiO2RP       | DTBP                | EthynTPhEPhA              |
++---------------+---------------------+---------------------------+
+|               | EthynPhM (only R2)  | EthynPhDA                 |
++---------------+---------------------+---------------------------+
+|               |                     | EthynFuA                  |
++---------------+---------------------+---------------------------+
+|               |                     | EthynThPCyanoAcryl        |
++---------------+---------------------+---------------------------+
+|               |                     | EthynDThPCyanoAcryl       |
++---------------+---------------------+---------------------------+
+|               |                     | DThPCyanoAcryl            |
++---------------+---------------------+---------------------------+
+|               |                     | ThPCyanoAcryl             |
++---------------+---------------------+---------------------------+
+|               |                     | EthynThPA                 |
++---------------+---------------------+---------------------------+
+|               |                     | EthynDThPA                |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthynPhA              |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthenThPCyanoAcryl    |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthynBTDPhA           |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthynDPhEPhA          |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthynPhEPhA           |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthynTPhEPhA          |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthynPhDA             |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthynFuA              |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthynThPCyanoAcryl    |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthynDThPCyanoAcryl   |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthynThPA             |
++---------------+---------------------+---------------------------+
+|               |                     | rot-EthynDThPA            |
++---------------+---------------------+---------------------------+

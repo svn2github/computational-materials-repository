@@ -15,23 +15,41 @@ def plotter(M, A, c):
         EH.append(row.E_HOMO)
         EG.append(row.E_gap)
     # Set colors based on metal center:
-    cl = {'Zn': 'red',
-          'FZn': 'gold',
-          'TiO': 'magenta',
-          'TiO2R': 'pink',
-          'H2': 'orange'}[M]
+    cl = {'ZnP': 'red',
+          'FZnP': 'gold',
+          'TiOP': 'magenta',
+          'FTiOP': 'purple',
+          'TiO2RP': 'pink',
+          'FTiO2RP': 'cadetblue',
+          'H2P': 'orange',
+          'FH2P': 'coral'}[M]
         
     # Set symbol based on anchor group:
     mk = {'EthynPhA': 's',
           '2CarboxyPropenA': 'o',
-          '2CyanoPropenA': '^'}[A]
+          '2CyanoPropenA': '^',
+	  'EthenThPCyanoAcryl': 'v',
+	  'DThPCyanoAcryl': '<',
+	  'EthynDThPA': '>',
+	  'EthynBTDPhA': '8',
+	  'EthynPhM': 'p',
+	  'EthynThPA': '*',
+	  'EthynDPhEPhA': 'h',
+	  'EthynThPCyanoAcryl': '+',
+	  'EthynPhEPhA': 'x',
+	  'EthynDThPCyanoAcryl': 'd',
+	  'EthynFuA': 'D',
+	  'ThPCyanoAcryl': 'H',
+	  'EthynTPhEPhA': '1',
+	  'EthenCyanoAcryl': '2',
+          'EthynPhDA': '3'}[A]
         
     plt.plot(EG, EH, color=cl, marker=mk, linestyle='None')
     plt.plot(EG, EL, color=cl, marker=mk, linestyle='None')
 
 c = ase.db.connect('dssc.db')
 
-for M in ['Zn', 'TiO', 'H2']:  # metal centers
+for M in ['ZnP', 'TiOP', 'H2P']:  # metal centers
     for A in ['EthynPhA', '2CarboxyPropenA', '2CyanoPropenA']:  # anchor groups
         plotter(M, A, c)
     plt.ylabel(r'Energy (eV)', fontsize=18)
