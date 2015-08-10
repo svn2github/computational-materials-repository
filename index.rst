@@ -78,13 +78,19 @@ Projects
           :width: 189px
           :height: 124px
      - | :ref:`fcc111`
-       | Benchmark: adsoption energy of atomic oxygen and carbon on fcc111.
+       | Benchmark: adsorption energy of atomic oxygen and carbon on fcc111.
 
    * - .. image:: compression.png
           :width: 189px
           :height: 124px
      - | :ref:`compression`
        | Benchmark: compression energies of bulk fcc and rocksalt.
+
+   * - .. image:: gbrv.png
+          :width: 189px
+          :height: 124px
+     - | :ref:`gbrv`
+       | Benchmark: Pseudopotentials for high-throughput DFT calculations (reproducing published results).
 
 .. toctree::
     :hidden:
@@ -103,6 +109,7 @@ Projects
     tmfp06d/tmfp06d
     fcc111/fcc111
     compression/compression
+    gbrv/gbrv
    
 
 What is CMR?
@@ -139,3 +146,5 @@ Other links
     :maxdepth: 1
     
     server
+
+..  LocalWords:  toctree organometal dssc
