@@ -13,7 +13,8 @@ downloads = [
     ('funct_perovskites', ['funct_perovskites.db']),
     ('fcc111', ['fcc111.db']),
     ('compression', ['compression.db']),
-    ('gbrv', ['gbrv.db'])]
+    ('gbrv', ['gbrv.db']),
+    ('g2', ['g2.db'])]
 
 # Add pictures for the front-page:
 downloads += [('.', [dir + '.png' for dir, names in downloads])]

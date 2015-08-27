@@ -92,6 +92,12 @@ Projects
      - | :ref:`gbrv`
        | Benchmark: Pseudopotentials for high-throughput DFT calculations (reproducing published results).
 
+   * - .. image:: g2.png
+          :width: 189px
+          :height: 124px
+     - | :ref:`g2`
+       | Benchmark: PBE atomization energies and structures of the G2/97 set of molecules.
+
 .. toctree::
     :hidden:
 
@@ -110,6 +116,7 @@ Projects
     fcc111/fcc111
     compression/compression
     gbrv/gbrv
+    g2/g2
    
 
 What is CMR?
