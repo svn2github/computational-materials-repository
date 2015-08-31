@@ -1,0 +1,49 @@
+.. _g2:
+
+G2/97
+=====
+
+PBE atomization energies and structures of the G2/97 set
+of molecules, calculated using different codes.
+G2/97 consists of combined G2-1 and G2-2 sets
+http://www.cse.anl.gov/OldCHMwebsiteContent/compmat/G2-97.htm
+
+* :download:`Download raw data for all codes <g2.db>`
+* `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dg2&
+  toggle=user,calculator,name,relativistic>`_
+
+.. contents::
+    
+Key-value pairs
+---------------
+
+===============  =============================================================
+key              description
+===============  =============================================================
+name             Name of the system
+bsse_corrected   True or False
+relativistic     Non-relativistic and scalar-relativistic results included
+project          Name of the project: "g2"
+===============  =============================================================
+
+Note that there are additional keys not explained above which are
+specific to the given calculator.
+
+
+Results
+-------
+
+First extract the data of the given code and
+insert it into a new database file. Then use the extract.py script
+to write the csv formatted file using the data from the new database file.
+
+.. literalinclude:: extract.sh
+
+The results can be plotted with https://svn.fysik.dtu.dk/projects/cmr2/trunk/g2/plot.py
+
+
+Running the calculations again
+------------------------------
+
+Selected scripts used to obtain the results are available at
+https://svn.fysik.dtu.dk/projects/cmr2/trunk/g2
