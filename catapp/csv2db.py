@@ -1,4 +1,3 @@
-# creates: catapp.db
 import csv
 import ase.db
 from ase import Atoms

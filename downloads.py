@@ -14,8 +14,8 @@ downloads = [
     ('fcc111', ['fcc111.db']),
     ('compression', ['compression.db']),
     ('gbrv', ['gbrv.db']),
-    ('g2', ['g2.db'])]
+    ('g2', ['g2.db']),
+    ('catapp', ['catapp.db', 'catappdata.csv'])]
 
 # Add pictures for the front-page:
 downloads += [('.', [dir + '.png' for dir, names in downloads])]
-downloads.append(('.', ['catapp.png']))
