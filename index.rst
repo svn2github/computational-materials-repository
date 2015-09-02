@@ -98,6 +98,12 @@ Projects
      - | :ref:`g2`
        | Benchmark: PBE atomization energies and structures of the G2/97 set of molecules.
 
+   * - .. image:: catapp.png
+          :width: 189px
+          :height: 124px
+     - | :ref:`catapp`
+       | CatApp ...
+
 .. toctree::
     :hidden:
 
@@ -117,7 +123,7 @@ Projects
     compression/compression
     gbrv/gbrv
     g2/g2
-   
+    catapp/catapp
 
 What is CMR?
 ------------

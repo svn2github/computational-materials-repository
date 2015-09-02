@@ -28,8 +28,6 @@ for row in con.select('heat_of_formation_all<=0.21'):
                      row.VB_ind + E0, row.CB_ind + E0,
                      row.VB_dir + E0, row.CB_dir + E0])
 
-        print('Working on ', name, '...')
-
         refs = []
         for row_ref in con.select('reference'):
             refs.append((row_ref.formula, row_ref.standard_energy))

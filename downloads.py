@@ -18,3 +18,4 @@ downloads = [
 
 # Add pictures for the front-page:
 downloads += [('.', [dir + '.png' for dir, names in downloads])]
+downloads.append(('.', ['catapp.png']))
