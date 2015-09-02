@@ -26,7 +26,7 @@ The data
   <http://suncat.stanford.edu/theory/outreach/catapp/>`_ web-page
 * Download database: :download:`catapp.db`
 * `Browse data <http://cmrdb.fysik.dtu.dk/?query=project%3Dcatapp&
-  toggle=user,mass,xc,a,b,ab,facet,surface,ea,er>`_
+  toggle=age,pbc,charge,volume,user,mass,surface,a,b,ab,facet,ea,er,xc>`_
     
 The csv-file has been converted to an ASE db-file using this script:
     
