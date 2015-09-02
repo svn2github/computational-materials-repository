@@ -36,9 +36,9 @@ The csv-file has been converted to an ASE db-file using this script:
 Key-value pairs
 ---------------
 
-=========  ===========================
+=========  =============================
 key        description
-=========  ===========================
+=========  =============================
 a          Reactant A
 b          Reactant B
 ab         Product AB
@@ -49,8 +49,8 @@ xc         XC-functional
 reference  Reference
 url        Link to reference
 dataset    Description of calculation
-project    Name of the project: "beef"
-=========  ===========================
+project    Name of the project: "catapp"
+=========  =============================
 
 
 Methane example
