@@ -101,7 +101,7 @@ Projects
    * - .. image:: catapp.png
           :width: 189px
           :height: 124px
-     - | :ref:`catapp`
+     - | :ref:`catapp1`
        | CatApp data: Calculated reaction and activation energies for elementary coupling reactions occurring on metal surfaces
        
 

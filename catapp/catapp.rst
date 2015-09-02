@@ -1,4 +1,4 @@
-.. _catapp:
+.. _catapp1:
 
 CatApp database
 ===============
