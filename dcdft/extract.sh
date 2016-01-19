@@ -44,14 +44,14 @@ python extract.py dcdft_abinit_jth.db
 ase-db dcdft.db project=dcdft,calculator=abinit,potentials=gpaw -i dcdft_abinit_paw09.db
 python extract.py dcdft_abinit_paw09.db
 # gpaw paw grid spacing 0.10 Angstrom, number of grid points fixed
-ase-db dcdft.db project=dcdft,calculator=gpaw,mode=fd,e=0.10,potentials_version=09 -i dcdft_gpaw_fd10_paw09.db
+ase-db dcdft.db project=dcdft,calculator=gpaw,mode=fd,e=0.10,potentials_version=0.9 -i dcdft_gpaw_fd10_paw09.db
 python extract.py dcdft_gpaw_fd10_paw09.db
 # gpaw paw grid spacing 0.08 Angstrom, number of grid points fixed
-ase-db dcdft.db project=dcdft,calculator=gpaw,mode=fd,e=0.08,potentials_version=09 -i dcdft_gpaw_fd_paw09.db
+ase-db dcdft.db project=dcdft,calculator=gpaw,mode=fd,e=0.08,potentials_version=0.9 -i dcdft_gpaw_fd_paw09.db
 python extract.py dcdft_gpaw_fd_paw09.db
 # gpaw paw planewave cutoff 100 Rydberg, number of grid points and planewaves variable
 ase-db dcdft.db project=dcdft,calculator=gpaw,mode=pw,e=1361.0,constant_basis=0,potentials_version=09 -i dcdft_gpaw_pw_variable_paw09.db
 python extract.py dcdft_gpaw_pw_variable_paw09.db
 # gpaw paw planewave cutoff 100 Rydberg, number of grid points and planewaves fixed
-ase-db dcdft.db project=dcdft,calculator=gpaw,mode=pw,e=1361.0,constant_basis=1,potentials_version=09 -i dcdft_gpaw_pw_paw09.db
+ase-db dcdft.db project=dcdft,calculator=gpaw,mode=pw,e=1361.0,constant_basis=1,potentials_version=0.9 -i dcdft_gpaw_pw_paw09.db
 python extract.py dcdft_gpaw_pw_paw09.db

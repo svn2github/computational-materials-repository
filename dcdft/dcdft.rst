@@ -1,6 +1,6 @@
 .. _dcdft:
 
-Banchmark: DeltaCodesDFT
+Benchmark: DeltaCodesDFT
 ========================
 
 Codes precision measured using the
