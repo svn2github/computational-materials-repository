@@ -104,6 +104,12 @@ Projects
      - | :ref:`catapp1`
        | CatApp data: Calculated reaction and activation energies for elementary coupling reactions occurring on metal surfaces
        
+   * - .. image:: rocksalt.png
+          :width: 189px
+          :height: 124px
+     - | :ref:`rocksalt`
+       | Benchmark: rocksalt equation of state.
+
 
 .. toctree::
     :hidden:
@@ -125,6 +131,7 @@ Projects
     gbrv/gbrv
     g2/g2
     catapp/catapp
+    rocksalt/rocksalt
 
 What is CMR?
 ------------

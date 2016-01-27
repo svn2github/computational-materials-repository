@@ -15,6 +15,7 @@ downloads = [
     ('compression', ['compression.db']),
     ('gbrv', ['gbrv.db']),
     ('g2', ['g2.db']),
+    ('rocksalt', ['rocksalt.db']),
     ('catapp', ['catapp.db', 'catappdata.csv'])]
 
 # Add pictures for the front-page:
